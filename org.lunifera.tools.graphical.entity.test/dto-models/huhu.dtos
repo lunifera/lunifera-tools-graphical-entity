@@ -1,0 +1,30 @@
+package huhu {
+	
+	/* Imports the original entity package */
+	import huhu.*;
+	
+	import org.lunifera.dsl.common.datatypes.my.*;
+	import org.lunifera.dsl.common.datatypes.my.*;
+
+
+	dto sdfsdfDto wraps sdfsdf {
+		inherit var id;
+		inherit var date;
+	}
+	
+	dto secondDto wraps second {
+		inherit ref ref1 mapto sdfsdfDto;
+		inherit var id;
+	}
+	
+	dto Bean1Dto wraps Bean1 {
+	}
+	
+	dto Bean2Dto extends Bean1Dto wraps Bean2 {
+	}
+	
+	dto Bean3Dto wraps Bean3 {
+		inherit ref myreference;
+	}
+	
+}

@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:entity="http://www.lunifera.org/dsl/entity/v1" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:trace="http://www.eclipse.org/xtext/trace/debug/1.0" xmlns:types="http://www.lunifera.org/dsl/common/types/v1" xmlns:types_1="http://www.eclipse.org/xtext/common/JavaVMTypes" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_NHhb4AaeEeS2asEwlwAvhA" selectedViews="_6VPvUBF3EeSwwMPKHBxTqA" version="8.1.1">
+  <models xmi:type="entity:LEntityModel" href="My.entitymodel#/"/>
+  <models xmi:type="entity:LEntityModel" href="my-new.entitymodel#/"/>
+  <models xmi:type="types:LCommonModel" href="src/base.datatypes#/0"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Boolean#java.lang.Boolean"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Short#java.lang.Short"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Integer#java.lang.Integer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Long#java.lang.Long"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Double#java.lang.Double"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Float#java.lang.Float"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Character#java.lang.Character"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Byte#java.lang.Byte"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.String#java.lang.String"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Date#java.util.Date"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Object#java.lang.Object"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.Serializable#java.io.Serializable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Comparable#java.lang.Comparable"/>
+  <models xmi:type="types_1:JvmPrimitiveType" href="java:/Primitives#boolean"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Class#java.lang.Class"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.CloneNotSupportedException#java.lang.CloneNotSupportedException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Throwable#java.lang.Throwable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.InterruptedException#java.lang.InterruptedException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Exception#java.lang.Exception"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.PrintWriter#java.io.PrintWriter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.PrintStream#java.io.PrintStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.StackTraceElement#java.lang.StackTraceElement"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Set#java.util.Set"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ObjectInputStream#java.io.ObjectInputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.IOException#java.io.IOException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ClassNotFoundException#java.lang.ClassNotFoundException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ObjectOutputStream#java.io.ObjectOutputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.List#java.util.List"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.Writer#java.io.Writer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.OutputStream#java.io.OutputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.FileNotFoundException#java.io.FileNotFoundException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.File#java.io.File"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.charset.Charset#java.nio.charset.Charset"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.UnsupportedEncodingException#java.io.UnsupportedEncodingException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.CharSequence#java.lang.CharSequence"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Locale#java.util.Locale"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Formatter#java.util.Formatter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Appendable#java.lang.Appendable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.Closeable#java.io.Closeable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.Flushable#java.io.Flushable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.AutoCloseable#java.lang.AutoCloseable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.SecureRandom#java.security.SecureRandom"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Enum#java.lang.Enum"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.URI#java.net.URI"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.FilenameFilter#java.io.FilenameFilter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.FileFilter#java.io.FileFilter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.Path#java.nio.file.Path"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.MalformedURLException#java.net.MalformedURLException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.URL#java.net.URL"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.misc.Unsafe#sun.misc.Unsafe"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.FileSystem#java.io.FileSystem"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Random#java.util.Random"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.regex.Pattern#java.util.regex.Pattern"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.SecureRandomSpi#java.security.SecureRandomSpi"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.Provider#java.security.Provider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.NoSuchAlgorithmException#java.security.NoSuchAlgorithmException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.NoSuchProviderException#java.security.NoSuchProviderException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.MessageDigest#java.security.MessageDigest"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Spliterator#java.util.Spliterator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.DoubleConsumer#java.util.function.DoubleConsumer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.LongConsumer#java.util.function.LongConsumer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.IntConsumer#java.util.function.IntConsumer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.stream.DoubleStream#java.util.stream.DoubleStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.stream.IntStream#java.util.stream.IntStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.stream.LongStream#java.util.stream.LongStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.atomic.AtomicLong#java.util.concurrent.atomic.AtomicLong"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ObjectStreamField#java.io.ObjectStreamField"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.Consumer#java.util.function.Consumer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Comparator#java.util.Comparator"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/java.lang.FunctionalInterface#java.lang.FunctionalInterface"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/java.lang.annotation.Target#java.lang.annotation.Target"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.lang.annotation.ElementType#java.lang.annotation.ElementType"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/java.lang.annotation.Retention#java.lang.annotation.Retention"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.lang.annotation.RetentionPolicy#java.lang.annotation.RetentionPolicy"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/java.lang.annotation.Documented#java.lang.annotation.Documented"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.annotation.Annotation#java.lang.annotation.Annotation"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.Function#java.util.function.Function"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.ToDoubleFunction#java.util.function.ToDoubleFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.ToIntFunction#java.util.function.ToIntFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.ToLongFunction#java.util.function.ToLongFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.stream.BaseStream#java.util.stream.BaseStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.DoublePredicate#java.util.function.DoublePredicate"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.OptionalDouble#java.util.OptionalDouble"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.stream.Stream#java.util.stream.Stream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.Supplier#java.util.function.Supplier"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.ObjDoubleConsumer#java.util.function.ObjDoubleConsumer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.BiConsumer#java.util.function.BiConsumer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.DoubleFunction#java.util.function.DoubleFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.DoubleSupplier#java.util.function.DoubleSupplier"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.DoubleUnaryOperator#java.util.function.DoubleUnaryOperator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.PrimitiveIterator#java.util.PrimitiveIterator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.DoubleToIntFunction#java.util.function.DoubleToIntFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.DoubleToLongFunction#java.util.function.DoubleToLongFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.DoubleBinaryOperator#java.util.function.DoubleBinaryOperator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.DoubleSummaryStatistics#java.util.DoubleSummaryStatistics"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Iterator#java.util.Iterator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Runnable#java.lang.Runnable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.Predicate#java.util.function.Predicate"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.stream.Collector#java.util.stream.Collector"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Optional#java.util.Optional"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.UnaryOperator#java.util.function.UnaryOperator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.BinaryOperator#java.util.function.BinaryOperator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.BiFunction#java.util.function.BiFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.IntFunction#java.util.function.IntFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.IntPredicate#java.util.function.IntPredicate"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.ObjIntConsumer#java.util.function.ObjIntConsumer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.OptionalInt#java.util.OptionalInt"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.IntSupplier#java.util.function.IntSupplier"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.IntUnaryOperator#java.util.function.IntUnaryOperator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.IntToDoubleFunction#java.util.function.IntToDoubleFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.IntToLongFunction#java.util.function.IntToLongFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.IntBinaryOperator#java.util.function.IntBinaryOperator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.IntSummaryStatistics#java.util.IntSummaryStatistics"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.LongPredicate#java.util.function.LongPredicate"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.ObjLongConsumer#java.util.function.ObjLongConsumer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.OptionalLong#java.util.OptionalLong"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.LongFunction#java.util.function.LongFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.LongSupplier#java.util.function.LongSupplier"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.LongUnaryOperator#java.util.function.LongUnaryOperator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.LongToDoubleFunction#java.util.function.LongToDoubleFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.LongToIntFunction#java.util.function.LongToIntFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.LongBinaryOperator#java.util.function.LongBinaryOperator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.LongSummaryStatistics#java.util.LongSummaryStatistics"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Number#java.lang.Number"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.Field#java.lang.reflect.Field"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/sun.reflect.CallerSensitive#sun.reflect.CallerSensitive"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.AccessibleObject#java.lang.reflect.AccessibleObject"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.Member#java.lang.reflect.Member"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.FieldAccessor#sun.reflect.FieldAccessor"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Map#java.util.Map"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.IllegalArgumentException#java.lang.IllegalArgumentException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.IllegalAccessException#java.lang.IllegalAccessException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.AnnotatedType#java.lang.reflect.AnnotatedType"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.factory.GenericsFactory#sun.reflect.generics.factory.GenericsFactory"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.repository.FieldRepository#sun.reflect.generics.repository.FieldRepository"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.Type#java.lang.reflect.Type"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.AnnotatedElement#java.lang.reflect.AnnotatedElement"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.SecurityException#java.lang.SecurityException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.Permission#java.security.Permission"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.ReflectionFactory#sun.reflect.ReflectionFactory"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.RuntimeException#java.lang.RuntimeException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.Guard#java.security.Guard"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.PermissionCollection#java.security.PermissionCollection"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Enumeration#java.util.Enumeration"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.PrivilegedAction#java.security.PrivilegedAction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.Constructor#java.lang.reflect.Constructor"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.Method#java.lang.reflect.Method"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.ConstructorAccessor#sun.reflect.ConstructorAccessor"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.Executable#java.lang.reflect.Executable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.MethodAccessor#sun.reflect.MethodAccessor"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.LangReflectAccess#sun.reflect.LangReflectAccess"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.repository.ConstructorRepository#sun.reflect.generics.repository.ConstructorRepository"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.TypeVariable#java.lang.reflect.TypeVariable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.InstantiationException#java.lang.InstantiationException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.InvocationTargetException#java.lang.reflect.InvocationTargetException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.StringBuilder#java.lang.StringBuilder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.repository.GenericDeclRepository#sun.reflect.generics.repository.GenericDeclRepository"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.MethodTypeSignature#sun.reflect.generics.tree.MethodTypeSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.repository.AbstractRepository#sun.reflect.generics.repository.AbstractRepository"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.Signature#sun.reflect.generics.tree.Signature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.visitor.Reifier#sun.reflect.generics.visitor.Reifier"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.Tree#sun.reflect.generics.tree.Tree"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.visitor.TypeTreeVisitor#sun.reflect.generics.visitor.TypeTreeVisitor"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.TypeArgument#sun.reflect.generics.tree.TypeArgument"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.ArrayTypeSignature#sun.reflect.generics.tree.ArrayTypeSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.BooleanSignature#sun.reflect.generics.tree.BooleanSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.BottomSignature#sun.reflect.generics.tree.BottomSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.ByteSignature#sun.reflect.generics.tree.ByteSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.CharSignature#sun.reflect.generics.tree.CharSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.ClassTypeSignature#sun.reflect.generics.tree.ClassTypeSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.DoubleSignature#sun.reflect.generics.tree.DoubleSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.FloatSignature#sun.reflect.generics.tree.FloatSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.FormalTypeParameter#sun.reflect.generics.tree.FormalTypeParameter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.IntSignature#sun.reflect.generics.tree.IntSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.LongSignature#sun.reflect.generics.tree.LongSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.ShortSignature#sun.reflect.generics.tree.ShortSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.SimpleClassTypeSignature#sun.reflect.generics.tree.SimpleClassTypeSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.TypeVariableSignature#sun.reflect.generics.tree.TypeVariableSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.VoidDescriptor#sun.reflect.generics.tree.VoidDescriptor"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.Wildcard#sun.reflect.generics.tree.Wildcard"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.TypeTree#sun.reflect.generics.tree.TypeTree"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.FieldTypeSignature#sun.reflect.generics.tree.FieldTypeSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.TypeSignature#sun.reflect.generics.tree.TypeSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.BaseType#sun.reflect.generics.tree.BaseType"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.ReturnType#sun.reflect.generics.tree.ReturnType"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.visitor.Visitor#sun.reflect.generics.visitor.Visitor"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.tree.ClassSignature#sun.reflect.generics.tree.ClassSignature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.GenericDeclaration#java.lang.reflect.GenericDeclaration"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ReflectiveOperationException#java.lang.ReflectiveOperationException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.AbstractStringBuilder#java.lang.AbstractStringBuilder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.StringBuffer#java.lang.StringBuffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.repository.MethodRepository#sun.reflect.generics.repository.MethodRepository"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.Parameter#java.lang.reflect.Parameter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Collection#java.util.Collection"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Iterable#java.lang.Iterable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.ParameterizedType#java.lang.reflect.ParameterizedType"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.reflect.WildcardType#java.lang.reflect.WildcardType"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Cloneable#java.lang.Cloneable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.HashMap#java.util.HashMap"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.regex.Matcher#java.util.regex.Matcher"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.util.regex.UnicodeProp#java.util.regex.UnicodeProp"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.regex.PatternSyntaxException#java.util.regex.PatternSyntaxException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.AbstractMap#java.util.AbstractMap"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.LinkedHashMap#java.util.LinkedHashMap"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.AbstractSet#java.util.AbstractSet"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.AbstractCollection#java.util.AbstractCollection"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.regex.MatchResult#java.util.regex.MatchResult"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Properties#java.util.Properties"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.Key#java.security.Key"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ref.Reference#java.lang.ref.Reference"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.InputStream#java.io.InputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.Debug#sun.security.util.Debug"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Hashtable#java.util.Hashtable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.InvalidPropertiesFormatException#java.util.InvalidPropertiesFormatException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.spi.XmlPropertiesProvider#sun.util.spi.XmlPropertiesProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ClassLoader#java.lang.ClassLoader"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.Reader#java.io.Reader"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.BufferedWriter#java.io.BufferedWriter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Dictionary#java.util.Dictionary"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.StreamCorruptedException#java.io.StreamCorruptedException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ObjectStreamException#java.io.ObjectStreamException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.NotSerializableException#java.io.NotSerializableException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Void#java.lang.Void"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.CodeSource#java.security.CodeSource"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.ProtectionDomain#java.security.ProtectionDomain"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.Certificate#java.security.cert.Certificate"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ClassFormatError#java.lang.ClassFormatError"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.ByteBuffer#java.nio.ByteBuffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Package#java.lang.Package"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.misc.URLClassPath#sun.misc.URLClassPath"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.AssertionStatusDirectives#java.lang.AssertionStatusDirectives"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Vector#java.util.Vector"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Stack#java.util.Stack"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.ConcurrentHashMap#java.util.concurrent.ConcurrentHashMap"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.CodeSigner#java.security.CodeSigner"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.CertificateFactory#java.security.cert.CertificateFactory"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.SocketPermission#java.net.SocketPermission"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.CertPath#java.security.cert.CertPath"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.Timestamp#java.security.Timestamp"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.CertificateEncodingException#java.security.cert.CertificateEncodingException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.CertificateException#java.security.cert.CertificateException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.GeneralSecurityException#java.security.GeneralSecurityException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.CertificateFactorySpi#java.security.cert.CertificateFactorySpi"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.CRLException#java.security.cert.CRLException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.CRL#java.security.cert.CRL"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.UnknownHostException#java.net.UnknownHostException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.InetAddress#java.net.InetAddress"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.net.spi.nameservice.NameService#sun.net.spi.nameservice.NameService"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.NetworkInterface#java.net.NetworkInterface"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.InetAddressImpl#java.net.InetAddressImpl"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.SocketException#java.net.SocketException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.InterfaceAddress#java.net.InterfaceAddress"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.Inet4Address#java.net.Inet4Address"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.Principal#java.security.Principal"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/javax.security.auth.Subject#javax.security.auth.Subject"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/javax.security.auth.AuthPermission#javax.security.auth.AuthPermission"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.LinkedList#java.util.LinkedList"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.AccessControlContext#java.security.AccessControlContext"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.PrivilegedExceptionAction#java.security.PrivilegedExceptionAction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.PrivilegedActionException#java.security.PrivilegedActionException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.BasicPermission#java.security.BasicPermission"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.AbstractSequentialList#java.util.AbstractSequentialList"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Deque#java.util.Deque"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.ListIterator#java.util.ListIterator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.AbstractList#java.util.AbstractList"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Queue#java.util.Queue"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.DomainCombiner#java.security.DomainCombiner"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.AccessControlException#java.security.AccessControlException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.PublicKey#java.security.PublicKey"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.InvalidKeyException#java.security.InvalidKeyException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.SignatureException#java.security.SignatureException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.KeyException#java.security.KeyException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.LinkageError#java.lang.LinkageError"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Error#java.lang.Error"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.Buffer#java.nio.Buffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.CharBuffer#java.nio.CharBuffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.DoubleBuffer#java.nio.DoubleBuffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.FloatBuffer#java.nio.FloatBuffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.IntBuffer#java.nio.IntBuffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.LongBuffer#java.nio.LongBuffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.ShortBuffer#java.nio.ShortBuffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.ByteOrder#java.nio.ByteOrder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Readable#java.lang.Readable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.jar.Manifest#java.util.jar.Manifest"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.NumberFormatException#java.lang.NumberFormatException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.FilterInputStream#java.io.FilterInputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.jar.Attributes#java.util.jar.Attributes"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.DataOutputStream#java.io.DataOutputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.FilterOutputStream#java.io.FilterOutputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.DataOutput#java.io.DataOutput"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.misc.Resource#sun.misc.Resource"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.URLStreamHandler#java.net.URLStreamHandler"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.jar.JarFile#java.util.jar.JarFile"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.jar.JarEntry#java.util.jar.JarEntry"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.misc.JarIndex#sun.misc.JarIndex"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.misc.MetaIndex#sun.misc.MetaIndex"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.misc.JavaUtilZipFileAccess#sun.misc.JavaUtilZipFileAccess"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.URLStreamHandlerFactory#java.net.URLStreamHandlerFactory"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.ArrayList#java.util.ArrayList"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.URLConnection#java.net.URLConnection"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.Proxy#java.net.Proxy"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.UnknownServiceException#java.net.UnknownServiceException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.ContentHandler#java.net.ContentHandler"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.FileNameMap#java.net.FileNameMap"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.ContentHandlerFactory#java.net.ContentHandlerFactory"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.net.www.MessageHeader#sun.net.www.MessageHeader"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.SocketAddress#java.net.SocketAddress"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.zip.ZipFile#java.util.zip.ZipFile"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.zip.ZipEntry#java.util.zip.ZipEntry"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.jar.JarVerifier#java.util.jar.JarVerifier"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ref.SoftReference#java.lang.ref.SoftReference"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.zip.ZipConstants#java.util.zip.ZipConstants"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.zip.InflaterInputStream#java.util.zip.InflaterInputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.zip.Inflater#java.util.zip.Inflater"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.zip.ZipException#java.util.zip.ZipException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.zip.ZipCoder#java.util.zip.ZipCoder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.zip.DataFormatException#java.util.zip.DataFormatException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.zip.ZStreamRef#java.util.zip.ZStreamRef"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.charset.CharsetDecoder#java.nio.charset.CharsetDecoder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.charset.CharsetEncoder#java.nio.charset.CharsetEncoder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.charset.CharacterCodingException#java.nio.charset.CharacterCodingException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.charset.CoderResult#java.nio.charset.CoderResult"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.charset.CodingErrorAction#java.nio.charset.CodingErrorAction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ref.WeakReference#java.lang.ref.WeakReference"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ref.ReferenceQueue#java.lang.ref.ReferenceQueue"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.attribute.FileTime#java.nio.file.attribute.FileTime"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.util.concurrent.TimeUnit#java.util.concurrent.TimeUnit"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.Instant#java.time.Instant"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Thread#java.lang.Thread"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.ConcurrentMap#java.util.concurrent.ConcurrentMap"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ThreadGroup#java.lang.ThreadGroup"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.nio.ch.Interruptible#sun.nio.ch.Interruptible"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.RuntimePermission#java.lang.RuntimePermission"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ThreadLocal#java.lang.ThreadLocal"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/sun.misc.Contended#sun.misc.Contended"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.atomic.AtomicInteger#java.util.concurrent.atomic.AtomicInteger"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.temporal.Temporal#java.time.temporal.Temporal"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.temporal.TemporalAdjuster#java.time.temporal.TemporalAdjuster"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.ZoneOffset#java.time.ZoneOffset"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.OffsetDateTime#java.time.OffsetDateTime"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.ZoneId#java.time.ZoneId"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.ZonedDateTime#java.time.ZonedDateTime"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.temporal.TemporalAccessor#java.time.temporal.TemporalAccessor"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.temporal.TemporalField#java.time.temporal.TemporalField"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.temporal.TemporalUnit#java.time.temporal.TemporalUnit"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.temporal.TemporalAmount#java.time.temporal.TemporalAmount"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.Clock#java.time.Clock"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.temporal.TemporalQuery#java.time.temporal.TemporalQuery"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.temporal.ValueRange#java.time.temporal.ValueRange"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.DataInput#java.io.DataInput"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.InvalidObjectException#java.io.InvalidObjectException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.zone.ZoneRules#java.time.zone.ZoneRules"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.zone.ZoneOffsetTransitionRule#java.time.zone.ZoneOffsetTransitionRule"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.LocalDateTime#java.time.LocalDateTime"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.zone.ZoneOffsetTransition#java.time.zone.ZoneOffsetTransition"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.Duration#java.time.Duration"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.time.Month#java.time.Month"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.time.DayOfWeek#java.time.DayOfWeek"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.LocalTime#java.time.LocalTime"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.time.format.TextStyle#java.time.format.TextStyle"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.LocalDate#java.time.LocalDate"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.OffsetTime#java.time.OffsetTime"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.format.DateTimeFormatter#java.time.format.DateTimeFormatter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.chrono.ChronoLocalDate#java.time.chrono.ChronoLocalDate"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.chrono.IsoChronology#java.time.chrono.IsoChronology"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.chrono.Era#java.time.chrono.Era"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.Period#java.time.Period"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.chrono.ChronoLocalDateTime#java.time.chrono.ChronoLocalDateTime"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.chrono.Chronology#java.time.chrono.Chronology"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.chrono.ChronoPeriod#java.time.chrono.ChronoPeriod"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.chrono.ChronoZonedDateTime#java.time.chrono.ChronoZonedDateTime"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.time.temporal.ChronoField#java.time.temporal.ChronoField"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.time.format.ResolverStyle#java.time.format.ResolverStyle"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.chrono.AbstractChronology#java.time.chrono.AbstractChronology"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.time.chrono.IsoEra#java.time.chrono.IsoEra"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ObjectInput#java.io.ObjectInput"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ObjectOutput#java.io.ObjectOutput"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.Format#java.text.Format"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.FieldPosition#java.text.FieldPosition"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.ParseException#java.text.ParseException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.ParsePosition#java.text.ParsePosition"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.format.DateTimeFormatterBuilder#java.time.format.DateTimeFormatterBuilder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.format.DecimalStyle#java.time.format.DecimalStyle"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.format.DateTimeParseException#java.time.format.DateTimeParseException"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.time.format.FormatStyle#java.time.format.FormatStyle"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.format.Parsed#java.time.format.Parsed"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.AttributedCharacterIterator#java.text.AttributedCharacterIterator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.CharacterIterator#java.text.CharacterIterator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.format.DateTimePrintContext#java.time.format.DateTimePrintContext"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.format.DateTimeParseContext#java.time.format.DateTimeParseContext"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.format.DateTimeTextProvider#java.time.format.DateTimeTextProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.math.BigDecimal#java.math.BigDecimal"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.time.format.SignStyle#java.time.format.SignStyle"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.math.BigInteger#java.math.BigInteger"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.math.MathContext#java.math.MathContext"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.math.RoundingMode#java.math.RoundingMode"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.math.MutableBigInteger#java.math.MutableBigInteger"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.time.DateTimeException#java.time.DateTimeException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.ManifestEntryVerifier#sun.security.util.ManifestEntryVerifier"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ByteArrayOutputStream#java.io.ByteArrayOutputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.ManifestDigester#sun.security.util.ManifestDigester"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.jar.JarException#java.util.jar.JarException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.RandomAccess#java.util.RandomAccess"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.ToIntBiFunction#java.util.function.ToIntBiFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.ToLongBiFunction#java.util.function.ToLongBiFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.function.ToDoubleBiFunction#java.util.function.ToDoubleBiFunction"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.atomic.AtomicReference#java.util.concurrent.atomic.AtomicReference"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.CountedCompleter#java.util.concurrent.CountedCompleter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.locks.ReentrantLock#java.util.concurrent.locks.ReentrantLock"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.ForkJoinTask#java.util.concurrent.ForkJoinTask"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.Future#java.util.concurrent.Future"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.RunnableFuture#java.util.concurrent.RunnableFuture"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.Callable#java.util.concurrent.Callable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.ExecutionException#java.util.concurrent.ExecutionException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.TimeoutException#java.util.concurrent.TimeoutException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.ForkJoinPool#java.util.concurrent.ForkJoinPool"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.AbstractExecutorService#java.util.concurrent.AbstractExecutorService"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.ForkJoinWorkerThread#java.util.concurrent.ForkJoinWorkerThread"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.ExecutorService#java.util.concurrent.ExecutorService"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.Executor#java.util.concurrent.Executor"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.locks.Lock#java.util.concurrent.locks.Lock"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.locks.AbstractQueuedSynchronizer#java.util.concurrent.locks.AbstractQueuedSynchronizer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.locks.Condition#java.util.concurrent.locks.Condition"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.locks.AbstractOwnableSynchronizer#java.util.concurrent.locks.AbstractOwnableSynchronizer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.NullPointerException#java.lang.NullPointerException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.MessageDigestSpi#java.security.MessageDigestSpi"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.DigestException#java.security.DigestException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.net.URISyntaxException#java.net.URISyntaxException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.Watchable#java.nio.file.Watchable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.FileSystem#java.nio.file.FileSystem"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.WatchService#java.nio.file.WatchService"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.WatchEvent#java.nio.file.WatchEvent"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.WatchKey#java.nio.file.WatchKey"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.nio.file.LinkOption#java.nio.file.LinkOption"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.PathMatcher#java.nio.file.PathMatcher"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.attribute.UserPrincipalLookupService#java.nio.file.attribute.UserPrincipalLookupService"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.spi.FileSystemProvider#java.nio.file.spi.FileSystemProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.attribute.GroupPrincipal#java.nio.file.attribute.GroupPrincipal"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.attribute.UserPrincipal#java.nio.file.attribute.UserPrincipal"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.nio.file.AccessMode#java.nio.file.AccessMode"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.CopyOption#java.nio.file.CopyOption"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.attribute.FileAttribute#java.nio.file.attribute.FileAttribute"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.attribute.FileAttributeView#java.nio.file.attribute.FileAttributeView"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.FileStore#java.nio.file.FileStore"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.AsynchronousFileChannel#java.nio.channels.AsynchronousFileChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.SeekableByteChannel#java.nio.channels.SeekableByteChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.DirectoryStream#java.nio.file.DirectoryStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.FileChannel#java.nio.channels.FileChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.OpenOption#java.nio.file.OpenOption"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.attribute.BasicFileAttributes#java.nio.file.attribute.BasicFileAttributes"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.attribute.AttributeView#java.nio.file.attribute.AttributeView"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.file.attribute.FileStoreAttributeView#java.nio.file.attribute.FileStoreAttributeView"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.AsynchronousChannel#java.nio.channels.AsynchronousChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.CompletionHandler#java.nio.channels.CompletionHandler"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.FileLock#java.nio.channels.FileLock"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.Channel#java.nio.channels.Channel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.ByteChannel#java.nio.channels.ByteChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.ReadableByteChannel#java.nio.channels.ReadableByteChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.WritableByteChannel#java.nio.channels.WritableByteChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.spi.AbstractInterruptibleChannel#java.nio.channels.spi.AbstractInterruptibleChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.GatheringByteChannel#java.nio.channels.GatheringByteChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.ScatteringByteChannel#java.nio.channels.ScatteringByteChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.MappedByteBuffer#java.nio.MappedByteBuffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.InterruptibleChannel#java.nio.channels.InterruptibleChannel"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.AsynchronousCloseException#java.nio.channels.AsynchronousCloseException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.channels.ClosedChannelException#java.nio.channels.ClosedChannelException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.FileDescriptor#java.io.FileDescriptor"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.SyncFailedException#java.io.SyncFailedException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.SecurityManager#java.lang.SecurityManager"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.nio.charset.spi.CharsetProvider#java.nio.charset.spi.CharsetProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.SortedMap#java.util.SortedMap"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.InternalLocaleBuilder#sun.util.locale.InternalLocaleBuilder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.provider.LocaleServiceProviderPool#sun.util.locale.provider.LocaleServiceProviderPool"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.spi.LocaleNameProvider#java.util.spi.LocaleNameProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.BaseLocale#sun.util.locale.BaseLocale"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.LocaleExtensions#sun.util.locale.LocaleExtensions"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.LocaleObjectCache#sun.util.locale.LocaleObjectCache"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.MessageFormat#java.text.MessageFormat"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.MissingResourceException#java.util.MissingResourceException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.LocaleSyntaxException#sun.util.locale.LocaleSyntaxException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.LanguageTag#sun.util.locale.LanguageTag"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.ParseStatus#sun.util.locale.ParseStatus"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.StringTokenIterator#sun.util.locale.StringTokenIterator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.spi.LocaleServiceProvider#java.util.spi.LocaleServiceProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.Extension#sun.util.locale.Extension"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Calendar#java.util.Calendar"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.TimeZone#java.util.TimeZone"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.DateFormatSymbols#java.text.DateFormatSymbols"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.OutputStreamWriter#java.io.OutputStreamWriter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.nio.cs.StreamEncoder#sun.nio.cs.StreamEncoder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ObjectStreamConstants#java.io.ObjectStreamConstants"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.DataInputStream#java.io.DataInputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ObjectInputValidation#java.io.ObjectInputValidation"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ObjectStreamClass#java.io.ObjectStreamClass"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.Externalizable#java.io.Externalizable"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.NotActiveException#java.io.NotActiveException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.SerialCallbackContext#java.io.SerialCallbackContext"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.SerializablePermission#java.io.SerializablePermission"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.InvalidClassException#java.io.InvalidClassException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.UnsupportedOperationException#java.lang.UnsupportedOperationException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.annotation.AnnotationType#sun.reflect.annotation.AnnotationType"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.ConstantPool#sun.reflect.ConstantPool"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.NoSuchMethodException#java.lang.NoSuchMethodException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.NoSuchFieldException#java.lang.NoSuchFieldException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.reflect.generics.repository.ClassRepository#sun.reflect.generics.repository.ClassRepository"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ClassValue#java.lang.ClassValue"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.WeakHashMap#java.util.WeakHashMap"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.calendar.BaseCalendar#sun.util.calendar.BaseCalendar"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.calendar.AbstractCalendar#sun.util.calendar.AbstractCalendar"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.calendar.CalendarDate#sun.util.calendar.CalendarDate"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.calendar.CalendarSystem#sun.util.calendar.CalendarSystem"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.calendar.Era#sun.util.calendar.Era"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.calendar.Gregorian#sun.util.calendar.Gregorian"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/javax.persistence.Index#javax.persistence.Index"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/javax.persistence.UniqueConstraint#javax.persistence.UniqueConstraint"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/javax.persistence.Embeddable#javax.persistence.Embeddable"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/javax.persistence.Transient#javax.persistence.Transient"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/java.lang.Deprecated#java.lang.Deprecated"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/com.sun.xml.internal.ws.developer.Serialization#com.sun.xml.internal.ws.developer.Serialization"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/javax.xml.ws.spi.WebServiceFeatureAnnotation#javax.xml.ws.spi.WebServiceFeatureAnnotation"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/com.sun.xml.internal.ws.developer.SerializationFeature#com.sun.xml.internal.ws.developer.SerializationFeature"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/javax.xml.ws.WebServiceFeature#javax.xml.ws.WebServiceFeature"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/com.sun.xml.internal.ws.api.FeatureConstructor#com.sun.xml.internal.ws.api.FeatureConstructor"/>
+  <models xmi:type="trace:DebugTraceRegion" href="src-gen/huhu/.haha.java._trace#/"/>
+  <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/java.lang.SafeVarargs#java.lang.SafeVarargs"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.SignatureFileVerifier#sun.security.util.SignatureFileVerifier"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.pkcs.SignerInfo#sun.security.pkcs.SignerInfo"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.pkcs.PKCS7#sun.security.pkcs.PKCS7"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.DerEncoder#sun.security.util.DerEncoder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.DerInputStream#sun.security.util.DerInputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.pkcs.ParsingException#sun.security.pkcs.ParsingException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.x509.X500Name#sun.security.x509.X500Name"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.x509.AlgorithmId#sun.security.x509.AlgorithmId"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.pkcs.PKCS9Attributes#sun.security.pkcs.PKCS9Attributes"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.DerOutputStream#sun.security.util.DerOutputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.X509Certificate#java.security.cert.X509Certificate"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.timestamp.TimestampToken#sun.security.timestamp.TimestampToken"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.DerInputBuffer#sun.security.util.DerInputBuffer"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.DerValue#sun.security.util.DerValue"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.ObjectIdentifier#sun.security.util.ObjectIdentifier"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.BitArray#sun.security.util.BitArray"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.io.ByteArrayInputStream#java.io.ByteArrayInputStream"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.ArrayIndexOutOfBoundsException#java.lang.ArrayIndexOutOfBoundsException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.IndexOutOfBoundsException#java.lang.IndexOutOfBoundsException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.x509.GeneralNameInterface#sun.security.x509.GeneralNameInterface"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.x509.RDN#sun.security.x509.RDN"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.x509.AVA#sun.security.x509.AVA"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/javax.security.auth.x500.X500Principal#javax.security.auth.x500.X500Principal"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.AlgorithmParameters#java.security.AlgorithmParameters"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.AlgorithmParametersSpi#java.security.AlgorithmParametersSpi"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.spec.AlgorithmParameterSpec#java.security.spec.AlgorithmParameterSpec"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.spec.InvalidParameterSpecException#java.security.spec.InvalidParameterSpecException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.pkcs.PKCS9Attribute#sun.security.pkcs.PKCS9Attribute"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.ByteArrayLexOrder#sun.security.util.ByteArrayLexOrder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.util.ByteArrayTagOrder#sun.security.util.ByteArrayTagOrder"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.X509Extension#java.security.cert.X509Extension"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.CertificateExpiredException#java.security.cert.CertificateExpiredException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.CertificateNotYetValidException#java.security.cert.CertificateNotYetValidException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.CertificateParsingException#java.security.cert.CertificateParsingException"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.pkcs.ContentInfo#sun.security.pkcs.ContentInfo"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.X509CRL#java.security.cert.X509CRL"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.timestamp.Timestamper#sun.security.timestamp.Timestamper"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.security.cert.X509CRLEntry#java.security.cert.X509CRLEntry"/>
+  <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/java.security.cert.CRLReason#java.security.cert.CRLReason"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.timestamp.TSRequest#sun.security.timestamp.TSRequest"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.security.timestamp.TSResponse#sun.security.timestamp.TSResponse"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.provider.LocaleProviderAdapter#sun.util.locale.provider.LocaleProviderAdapter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.spi.BreakIteratorProvider#java.text.spi.BreakIteratorProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.spi.CalendarDataProvider#java.util.spi.CalendarDataProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.spi.CalendarNameProvider#java.util.spi.CalendarNameProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.spi.CalendarProvider#sun.util.spi.CalendarProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.spi.CollatorProvider#java.text.spi.CollatorProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.spi.CurrencyNameProvider#java.util.spi.CurrencyNameProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.spi.DateFormatProvider#java.text.spi.DateFormatProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.spi.DateFormatSymbolsProvider#java.text.spi.DateFormatSymbolsProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.spi.DecimalFormatSymbolsProvider#java.text.spi.DecimalFormatSymbolsProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.provider.LocaleResources#sun.util.locale.provider.LocaleResources"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.spi.NumberFormatProvider#java.text.spi.NumberFormatProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.spi.TimeZoneNameProvider#java.util.spi.TimeZoneNameProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.BreakIterator#java.text.BreakIterator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.Collator#java.text.Collator"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.CollationKey#java.text.CollationKey"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.DateFormat#java.text.DateFormat"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.NumberFormat#java.text.NumberFormat"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.Currency#java.util.Currency"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.HashSet#java.util.HashSet"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.text.DecimalFormatSymbols#java.text.DecimalFormatSymbols"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.locale.provider.ResourceBundleBasedAdapter#sun.util.locale.provider.ResourceBundleBasedAdapter"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.ResourceBundle#java.util.ResourceBundle"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.resources.LocaleData#sun.util.resources.LocaleData"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.spi.ResourceBundleControlProvider#java.util.spi.ResourceBundleControlProvider"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.resources.OpenListResourceBundle#sun.util.resources.OpenListResourceBundle"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.resources.TimeZoneNamesBundle#sun.util.resources.TimeZoneNamesBundle"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/sun.util.resources.ParallelListResourceBundle#sun.util.resources.ParallelListResourceBundle"/>
+  <models xmi:type="types_1:JvmGenericType" href="java:/Objects/java.util.concurrent.atomic.AtomicMarkableReference#java.util.concurrent.atomic.AtomicMarkableReference"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_NpAYUAaeEeS2asEwlwAvhA" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_0YYc4BBGEeS47JBNa6_ejQ" name="my.diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_0ZX7YBBGEeS47JBNa6_ejQ" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_0ZX7YRBGEeS47JBNa6_ejQ" type="Sirius" element="_0YYc4BBGEeS47JBNa6_ejQ" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_0Z9KMBBGEeS47JBNa6_ejQ" type="2002" element="_0YZD8BBGEeS47JBNa6_ejQ">
+            <children xmi:type="notation:Node" xmi:id="_0by9QBBGEeS47JBNa6_ejQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_0b1ZgBBGEeS47JBNa6_ejQ" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_0cTTkBBGEeS47JBNa6_ejQ" type="3009" element="_0YZD9hBGEeS47JBNa6_ejQ">
+                <children xmi:type="notation:Node" xmi:id="_0cT6oBBGEeS47JBNa6_ejQ" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_0cVIwBBGEeS47JBNa6_ejQ" type="7003">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_0cVIwRBGEeS47JBNa6_ejQ"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_0cVIwhBGEeS47JBNa6_ejQ"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_0cTTkRBGEeS47JBNa6_ejQ" fontName="Lucida Grande" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cTTkhBGEeS47JBNa6_ejQ" x="31" y="30"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_36n0kBBGEeS47JBNa6_ejQ" type="3009" element="_326ZQBBGEeS47JBNa6_ejQ">
+                <children xmi:type="notation:Node" xmi:id="_36oboBBGEeS47JBNa6_ejQ" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_36oboRBGEeS47JBNa6_ejQ" type="7003">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_36obohBGEeS47JBNa6_ejQ"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_36oboxBGEeS47JBNa6_ejQ"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_36n0kRBGEeS47JBNa6_ejQ" fontName="Lucida Grande" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_36n0khBGEeS47JBNa6_ejQ" x="192" y="198" width="100" height="150"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_0b2AkBBGEeS47JBNa6_ejQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_0b2AkRBGEeS47JBNa6_ejQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_0Z9KMRBGEeS47JBNa6_ejQ" fontName="Lucida Grande" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0Z9KMhBGEeS47JBNa6_ejQ" width="559" height="415"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0cHGUBBGEeS47JBNa6_ejQ" type="2002" element="_0YZD_BBGEeS47JBNa6_ejQ">
+            <children xmi:type="notation:Node" xmi:id="_0cI7gBBGEeS47JBNa6_ejQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_0cJikBBGEeS47JBNa6_ejQ" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_0cJikRBGEeS47JBNa6_ejQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_0cJikhBGEeS47JBNa6_ejQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_0cHGURBGEeS47JBNa6_ejQ" fontName="Lucida Grande" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cHGUhBGEeS47JBNa6_ejQ" x="708" y="40"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_0ZX7YhBGEeS47JBNa6_ejQ"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_0YZD8BBGEeS47JBNa6_ejQ" name="huhu">
+        <target xmi:type="types:LTypedPackage" href="My.entitymodel#//@packages.0"/>
+        <semanticElements xmi:type="types:LTypedPackage" href="My.entitymodel#//@packages.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_0YZD8RBGEeS47JBNa6_ejQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZD8hBGEeS47JBNa6_ejQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZD8xBGEeS47JBNa6_ejQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZD9BBGEeS47JBNa6_ejQ" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZD9RBGEeS47JBNa6_ejQ" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_0YZD9hBGEeS47JBNa6_ejQ" name="MyEntity" width="10" height="15">
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_0YZD9xBGEeS47JBNa6_ejQ" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZD-BBGEeS47JBNa6_ejQ"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZD-RBGEeS47JBNa6_ejQ"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZD-hBGEeS47JBNa6_ejQ" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZD-xBGEeS47JBNa6_ejQ" red="255" green="245" blue="181"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_326ZQBBGEeS47JBNa6_ejQ" name="second" width="10" height="15">
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_326ZQRBGEeS47JBNa6_ejQ" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_326ZQhBGEeS47JBNa6_ejQ"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_326ZQxBGEeS47JBNa6_ejQ"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_326ZRBBGEeS47JBNa6_ejQ" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_326ZRRBGEeS47JBNa6_ejQ" red="255" green="245" blue="181"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_0YZD_BBGEeS47JBNa6_ejQ" name="org.lunifera.dsl.common.datatypes.my">
+        <target xmi:type="types:LTypedPackage" href="src/base.datatypes#/0/@packages.0"/>
+        <semanticElements xmi:type="types:LTypedPackage" href="src/base.datatypes#/0/@packages.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_0YZD_RBGEeS47JBNa6_ejQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZD_hBGEeS47JBNa6_ejQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZD_xBGEeS47JBNa6_ejQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZEABBGEeS47JBNa6_ejQ" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_0YZEARBGEeS47JBNa6_ejQ" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_0YZEAhBGEeS47JBNa6_ejQ"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer"/>
+      <target xmi:type="entity:LEntityModel" href="My.entitymodel#/0"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.lunifera.tools.graphical.entity.viewmodel/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_6VPvUBF3EeSwwMPKHBxTqA" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_EF-8QBldEeSkHsTnYqWgoA" name="new Entities.diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_EGddYBldEeSkHsTnYqWgoA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_EGddYRldEeSkHsTnYqWgoA" type="Sirius" element="_EF-8QBldEeSkHsTnYqWgoA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_EGqRsBldEeSkHsTnYqWgoA" type="2002" element="_EF-8QRldEeSkHsTnYqWgoA">
+            <children xmi:type="notation:Node" xmi:id="_EJF6oBldEeSkHsTnYqWgoA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_EJGhsBldEeSkHsTnYqWgoA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_E4Em4BllEeSscqBKt4v_3w" type="3009" element="_E0H7ABllEeSscqBKt4v_3w">
+                <children xmi:type="notation:Node" xmi:id="_E4JfYBllEeSscqBKt4v_3w" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_E4KGcBllEeSscqBKt4v_3w" type="7003">
+                  <children xmi:type="notation:Node" xmi:id="_FjRgABllEeSscqBKt4v_3w" type="3010" element="_FfucwBllEeSscqBKt4v_3w">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_FjRgARllEeSscqBKt4v_3w"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_I-NV0BllEeSscqBKt4v_3w" type="3010" element="_I6sHwBllEeSscqBKt4v_3w">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_I-NV0RllEeSscqBKt4v_3w"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_E4KGcRllEeSscqBKt4v_3w"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_E4KGchllEeSscqBKt4v_3w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_E4Em4RllEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E4Em4hllEeSscqBKt4v_3w" x="36" y="58" width="100" height="150"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_5CiRYBlmEeSscqBKt4v_3w" type="3009" element="_493MwBlmEeSscqBKt4v_3w">
+                <children xmi:type="notation:Node" xmi:id="_5Ci4cBlmEeSscqBKt4v_3w" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_5Ci4cRlmEeSscqBKt4v_3w" type="7003">
+                  <children xmi:type="notation:Node" xmi:id="_st3SYBl0EeSscqBKt4v_3w" type="3010" element="_sqnxIBl0EeSscqBKt4v_3w">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_st3SYRl0EeSscqBKt4v_3w"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_5Ci4chlmEeSscqBKt4v_3w"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_5Ci4cxlmEeSscqBKt4v_3w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_5CiRYRlmEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5CiRYhlmEeSscqBKt4v_3w" x="231" y="58" width="100" height="150"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_PUdk4BlzEeSscqBKt4v_3w" type="3009" element="_PRODoBlzEeSscqBKt4v_3w">
+                <children xmi:type="notation:Node" xmi:id="_PUeL8BlzEeSscqBKt4v_3w" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_PUeL8RlzEeSscqBKt4v_3w" type="7003">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_PUeL8hlzEeSscqBKt4v_3w"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_PUeL8xlzEeSscqBKt4v_3w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_PUdk4RlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PUdk4hlzEeSscqBKt4v_3w" x="163" y="315" width="100" height="150"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_SMoE0BlzEeSscqBKt4v_3w" type="3009" element="_SJiUkBlzEeSscqBKt4v_3w">
+                <children xmi:type="notation:Node" xmi:id="_SMor4BlzEeSscqBKt4v_3w" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_SMor4RlzEeSscqBKt4v_3w" type="7003">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_SMor4hlzEeSscqBKt4v_3w"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_SMor4xlzEeSscqBKt4v_3w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_SMoE0RlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SMoE0hlzEeSscqBKt4v_3w" x="531" y="282" width="100" height="150"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_VaRFgBlzEeSscqBKt4v_3w" type="3009" element="_VXMjYBlzEeSscqBKt4v_3w">
+                <children xmi:type="notation:Node" xmi:id="_VaRskBlzEeSscqBKt4v_3w" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_VaRskRlzEeSscqBKt4v_3w" type="7003">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_VaRskhlzEeSscqBKt4v_3w"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_VaRskxlzEeSscqBKt4v_3w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_VaRFgRlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VaRFghlzEeSscqBKt4v_3w" x="459" y="86" width="100" height="150"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_EJGhsRldEeSkHsTnYqWgoA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_EJGhshldEeSkHsTnYqWgoA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_EGqRsRldEeSkHsTnYqWgoA" fontName="Lucida Grande" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EGqRshldEeSkHsTnYqWgoA" x="8" y="-4" width="755" height="483"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_EJMoUBldEeSkHsTnYqWgoA" type="2002" element="_EF-8UxldEeSkHsTnYqWgoA">
+            <children xmi:type="notation:Node" xmi:id="_EJOdgBldEeSkHsTnYqWgoA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_EJOdgRldEeSkHsTnYqWgoA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_PUeL9BlzEeSscqBKt4v_3w" type="3009" element="_PSyJ4BlzEeSscqBKt4v_3w">
+                <children xmi:type="notation:Node" xmi:id="_PUeL9xlzEeSscqBKt4v_3w" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_PUezABlzEeSscqBKt4v_3w" type="7003">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_PUezARlzEeSscqBKt4v_3w"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_PUezAhlzEeSscqBKt4v_3w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_PUeL9RlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PUeL9hlzEeSscqBKt4v_3w" x="223" y="54" width="100" height="150"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_SNF-4BlzEeSscqBKt4v_3w" type="3009" element="_SLI3EBlzEeSscqBKt4v_3w">
+                <children xmi:type="notation:Node" xmi:id="_SNGl8BlzEeSscqBKt4v_3w" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_SNGl8RlzEeSscqBKt4v_3w" type="7003">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_SNGl8hlzEeSscqBKt4v_3w"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_SNGl8xlzEeSscqBKt4v_3w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_SNF-4RlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNF-4hlzEeSscqBKt4v_3w" x="227" y="294" width="100" height="150"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_VaRslBlzEeSscqBKt4v_3w" type="3009" element="_VYwCkBlzEeSscqBKt4v_3w">
+                <children xmi:type="notation:Node" xmi:id="_VaRslxlzEeSscqBKt4v_3w" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_VaSToBlzEeSscqBKt4v_3w" type="7003">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_VaSToRlzEeSscqBKt4v_3w"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_VaSTohlzEeSscqBKt4v_3w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_VaRslRlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VaRslhlzEeSscqBKt4v_3w" x="22" y="82" width="100" height="150"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_EJOdghldEeSkHsTnYqWgoA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_EJOdgxldEeSkHsTnYqWgoA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_EJNPYBldEeSkHsTnYqWgoA" fontName="Lucida Grande" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EJNPYRldEeSkHsTnYqWgoA" x="876" y="76" width="395" height="467"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_EGddYhldEeSkHsTnYqWgoA"/>
+          <edges xmi:type="notation:Edge" xmi:id="_cCa6sBlyEeSscqBKt4v_3w" type="4001" element="_b9RU8BlyEeSscqBKt4v_3w" source="_5CiRYBlmEeSscqBKt4v_3w" target="_E4Em4BllEeSscqBKt4v_3w">
+            <children xmi:type="notation:Node" xmi:id="_cCcv4BlyEeSscqBKt4v_3w" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cCcv4RlyEeSscqBKt4v_3w" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cCdW8BlyEeSscqBKt4v_3w" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cCdW8RlyEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cCdW8hlyEeSscqBKt4v_3w" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cCdW8xlyEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_cCa6sRlyEeSscqBKt4v_3w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_cCa6shlyEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cCa6sxlyEeSscqBKt4v_3w" points="[-98, 3, 292, 3]$[-399, 148, -9, 148]"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_UllgQBlzEeSscqBKt4v_3w" type="4001" element="_UiV_ABlzEeSscqBKt4v_3w" source="_SMoE0BlzEeSscqBKt4v_3w" target="_PUdk4BlzEeSscqBKt4v_3w">
+            <children xmi:type="notation:Node" xmi:id="_UlmHUBlzEeSscqBKt4v_3w" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlmHURlzEeSscqBKt4v_3w" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UlmHUhlzEeSscqBKt4v_3w" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlmHUxlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UlmHVBlzEeSscqBKt4v_3w" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlmHVRlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_UllgQRlzEeSscqBKt4v_3w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_UllgQhlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UllgQxlzEeSscqBKt4v_3w" points="[-61, -2, 404, -5]$[-526, -64, -61, -67]"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_UlmHVhlzEeSscqBKt4v_3w" type="4001" element="_UiWmFBlzEeSscqBKt4v_3w" source="_SMoE0BlzEeSscqBKt4v_3w" target="_PUeL9BlzEeSscqBKt4v_3w">
+            <children xmi:type="notation:Node" xmi:id="_UlmuYBlzEeSscqBKt4v_3w" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlmuYRlzEeSscqBKt4v_3w" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UlmuYhlzEeSscqBKt4v_3w" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlmuYxlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UlmuZBlzEeSscqBKt4v_3w" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlmuZRlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_UlmHVxlzEeSscqBKt4v_3w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_UlmHWBlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UlmHWRlzEeSscqBKt4v_3w" points="[49, -4, -426, 127]$[415, -26, -60, 105]$[432, -57, -43, 74]"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_UlmuZhlzEeSscqBKt4v_3w" type="4001" element="_UiXNIxlzEeSscqBKt4v_3w" source="_SNF-4BlzEeSscqBKt4v_3w" target="_PUdk4BlzEeSscqBKt4v_3w">
+            <children xmi:type="notation:Node" xmi:id="_UlmuahlzEeSscqBKt4v_3w" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlmuaxlzEeSscqBKt4v_3w" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UlmubBlzEeSscqBKt4v_3w" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlmubRlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UlnVcBlzEeSscqBKt4v_3w" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlnVcRlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_UlmuZxlzEeSscqBKt4v_3w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_UlmuaBlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UlmuaRlzEeSscqBKt4v_3w" points="[-49, 12, 924, -77]$[-622, 154, 351, 65]$[-924, 98, 49, 9]"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_UlnVchlzEeSscqBKt4v_3w" type="4001" element="_UiXNKBlzEeSscqBKt4v_3w" source="_SNF-4BlzEeSscqBKt4v_3w" target="_PUeL9BlzEeSscqBKt4v_3w">
+            <children xmi:type="notation:Node" xmi:id="_UlnVdhlzEeSscqBKt4v_3w" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlnVdxlzEeSscqBKt4v_3w" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UlnVeBlzEeSscqBKt4v_3w" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlnVeRlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UlnVehlzEeSscqBKt4v_3w" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlnVexlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_UlnVcxlzEeSscqBKt4v_3w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_UlnVdBlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UlnVdRlzEeSscqBKt4v_3w" points="[400, -246, 865, -249]$[270, -321, 735, -324]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UmFPgBlzEeSscqBKt4v_3w" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UmF2kBlzEeSscqBKt4v_3w" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_XQNTcBlzEeSscqBKt4v_3w" type="4001" element="_XM6u4BlzEeSscqBKt4v_3w" source="_VaRFgBlzEeSscqBKt4v_3w" target="_PUdk4BlzEeSscqBKt4v_3w">
+            <children xmi:type="notation:Node" xmi:id="_XQN6gBlzEeSscqBKt4v_3w" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQN6gRlzEeSscqBKt4v_3w" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XQN6ghlzEeSscqBKt4v_3w" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQN6gxlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XQN6hBlzEeSscqBKt4v_3w" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQN6hRlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_XQNTcRlzEeSscqBKt4v_3w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_XQNTchlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XQNTcxlzEeSscqBKt4v_3w" points="[-61, 44, 309, -242]$[-324, 194, 46, -92]"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_XQN6hhlzEeSscqBKt4v_3w" type="4001" element="_XM6u5RlzEeSscqBKt4v_3w" source="_VaRFgBlzEeSscqBKt4v_3w" target="_PUeL9BlzEeSscqBKt4v_3w">
+            <children xmi:type="notation:Node" xmi:id="_XQN6ihlzEeSscqBKt4v_3w" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQN6ixlzEeSscqBKt4v_3w" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XQOhkBlzEeSscqBKt4v_3w" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQOhkRlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XQOhkhlzEeSscqBKt4v_3w" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQOhkxlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_XQN6hxlzEeSscqBKt4v_3w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_XQN6iBlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XQN6iRlzEeSscqBKt4v_3w" points="[49, -4, -591, -48]$[361, -25, -279, -69]$[531, -25, -109, -69]$[591, 12, -49, -32]"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_XQOhlBlzEeSscqBKt4v_3w" type="4001" element="_XM7V8BlzEeSscqBKt4v_3w" source="_VaRslBlzEeSscqBKt4v_3w" target="_PUdk4BlzEeSscqBKt4v_3w">
+            <children xmi:type="notation:Node" xmi:id="_XQOhmBlzEeSscqBKt4v_3w" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQOhmRlzEeSscqBKt4v_3w" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XQOhmhlzEeSscqBKt4v_3w" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQOhmxlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XQOhnBlzEeSscqBKt4v_3w" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQOhnRlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_XQOhlRlzEeSscqBKt4v_3w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_XQOhlhlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XQOhlxlzEeSscqBKt4v_3w" points="[-49, 2, 686, -155]$[-428, 22, 307, -135]$[-686, 135, 49, -22]"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_XQPIoBlzEeSscqBKt4v_3w" type="4001" element="_XM7V9RlzEeSscqBKt4v_3w" source="_VaRslBlzEeSscqBKt4v_3w" target="_PUeL9BlzEeSscqBKt4v_3w">
+            <children xmi:type="notation:Node" xmi:id="_XQPIpBlzEeSscqBKt4v_3w" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQPIpRlzEeSscqBKt4v_3w" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XQPIphlzEeSscqBKt4v_3w" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQPIpxlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XQPIqBlzEeSscqBKt4v_3w" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQPIqRlzEeSscqBKt4v_3w" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_XQPIoRlzEeSscqBKt4v_3w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_XQPIohlzEeSscqBKt4v_3w" fontName="Lucida Grande" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XQPIoxlzEeSscqBKt4v_3w" points="[257, -31, 627, -317]$[365, -38, 735, -324]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XQPvsBlzEeSscqBKt4v_3w" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XQPvsRlzEeSscqBKt4v_3w" id="(0.5,0.5)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_EF-8QRldEeSkHsTnYqWgoA" name="huhu">
+        <target xmi:type="types:LTypedPackage" href="My.entitymodel#/0/@packages.0"/>
+        <semanticElements xmi:type="types:LTypedPackage" href="My.entitymodel#/0/@packages.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_EF-8QhldEeSkHsTnYqWgoA">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_EF-8QxldEeSkHsTnYqWgoA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_EF-8RBldEeSkHsTnYqWgoA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_EF-8RRldEeSkHsTnYqWgoA" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_EF-8RhldEeSkHsTnYqWgoA" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_E0H7ABllEeSscqBKt4v_3w" name="sdfsdf" incomingEdges="_b9RU8BlyEeSscqBKt4v_3w" width="10" height="15">
+          <target xmi:type="entity:LEntity" href="My.entitymodel#/0/@packages.0/@types.0"/>
+          <semanticElements xmi:type="entity:LEntity" href="My.entitymodel#/0/@packages.0/@types.0"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_E0IiEBllEeSscqBKt4v_3w" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_E0IiERllEeSscqBKt4v_3w"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_E0IiEhllEeSscqBKt4v_3w"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_E0IiExllEeSscqBKt4v_3w" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_E0IiFBllEeSscqBKt4v_3w" red="255" green="245" blue="181"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']"/>
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_FfucwBllEeSscqBKt4v_3w" name="id : String">
+            <target xmi:type="entity:LEntityAttribute" href="My.entitymodel#/0/@packages.0/@types.0/@features.0"/>
+            <semanticElements xmi:type="entity:LEntityAttribute" href="My.entitymodel#/0/@packages.0/@types.0/@features.0"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_FfvD0BllEeSscqBKt4v_3w" labelAlignment="LEFT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_FfvD0RllEeSscqBKt4v_3w"/>
+              <description xmi:type="style:SquareDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_FfvD0hllEeSscqBKt4v_3w"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_FfvD0xllEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']"/>
+          </ownedElements>
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_I6sHwBllEeSscqBKt4v_3w" name="date : Date">
+            <target xmi:type="entity:LEntityAttribute" href="My.entitymodel#/0/@packages.0/@types.0/@features.1"/>
+            <semanticElements xmi:type="entity:LEntityAttribute" href="My.entitymodel#/0/@packages.0/@types.0/@features.1"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_I6sHwRllEeSscqBKt4v_3w" labelAlignment="LEFT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_I6sHwhllEeSscqBKt4v_3w"/>
+              <description xmi:type="style:SquareDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_I6sHwxllEeSscqBKt4v_3w"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_I6sHxBllEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']"/>
+          </ownedElements>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_493MwBlmEeSscqBKt4v_3w" name="second" outgoingEdges="_b9RU8BlyEeSscqBKt4v_3w" width="10" height="15">
+          <target xmi:type="entity:LEntity" href="My.entitymodel#/0/@packages.0/@types.1"/>
+          <semanticElements xmi:type="entity:LEntity" href="My.entitymodel#/0/@packages.0/@types.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_493MwRlmEeSscqBKt4v_3w" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_493MwhlmEeSscqBKt4v_3w"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_493MwxlmEeSscqBKt4v_3w"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_493MxBlmEeSscqBKt4v_3w" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_493MxRlmEeSscqBKt4v_3w" red="255" green="245" blue="181"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']"/>
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_sqnxIBl0EeSscqBKt4v_3w" name="id : Long">
+            <target xmi:type="entity:LEntityAttribute" href="My.entitymodel#/0/@packages.0/@types.1/@features.1"/>
+            <semanticElements xmi:type="entity:LEntityAttribute" href="My.entitymodel#/0/@packages.0/@types.1/@features.1"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_sqnxIRl0EeSscqBKt4v_3w" labelAlignment="LEFT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_sqnxIhl0EeSscqBKt4v_3w"/>
+              <description xmi:type="style:SquareDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_sqnxIxl0EeSscqBKt4v_3w"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_sqnxJBl0EeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']"/>
+          </ownedElements>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_PRODoBlzEeSscqBKt4v_3w" name="Bean1" incomingEdges="_UiV_ABlzEeSscqBKt4v_3w _UiXNIxlzEeSscqBKt4v_3w _XM6u4BlzEeSscqBKt4v_3w _XM7V8BlzEeSscqBKt4v_3w" width="10" height="15">
+          <target xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.2"/>
+          <semanticElements xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.2"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_PRODoRlzEeSscqBKt4v_3w" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_PRODohlzEeSscqBKt4v_3w"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_PRODoxlzEeSscqBKt4v_3w"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_PRODpBlzEeSscqBKt4v_3w" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_PRODpRlzEeSscqBKt4v_3w" red="204" green="242" blue="166"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_SJiUkBlzEeSscqBKt4v_3w" name="Bean2" outgoingEdges="_UiV_ABlzEeSscqBKt4v_3w _UiWmFBlzEeSscqBKt4v_3w" width="10" height="15">
+          <target xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.3"/>
+          <semanticElements xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.3"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_SJi7oBlzEeSscqBKt4v_3w" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_SJi7oRlzEeSscqBKt4v_3w"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_SJi7ohlzEeSscqBKt4v_3w"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_SJi7oxlzEeSscqBKt4v_3w" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_SJi7pBlzEeSscqBKt4v_3w" red="204" green="242" blue="166"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_VXMjYBlzEeSscqBKt4v_3w" name="Bean3" outgoingEdges="_XM6u4BlzEeSscqBKt4v_3w _XM6u5RlzEeSscqBKt4v_3w" width="10" height="15">
+          <target xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.4"/>
+          <semanticElements xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.4"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_VXMjYRlzEeSscqBKt4v_3w" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_VXMjYhlzEeSscqBKt4v_3w"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_VXMjYxlzEeSscqBKt4v_3w"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_VXMjZBlzEeSscqBKt4v_3w" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_VXMjZRlzEeSscqBKt4v_3w" red="204" green="242" blue="166"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_EF-8UxldEeSkHsTnYqWgoA" name="org.lunifera.dsl.common.datatypes.my">
+        <target xmi:type="types:LTypedPackage" href="src/base.datatypes#/0/@packages.0"/>
+        <semanticElements xmi:type="types:LTypedPackage" href="src/base.datatypes#/0/@packages.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_EF-8VBldEeSkHsTnYqWgoA">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_EF-8VRldEeSkHsTnYqWgoA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_EF-8VhldEeSkHsTnYqWgoA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_EF-8VxldEeSkHsTnYqWgoA" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_EF-8WBldEeSkHsTnYqWgoA" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_PSyJ4BlzEeSscqBKt4v_3w" name="Bean1" incomingEdges="_UiWmFBlzEeSscqBKt4v_3w _UiXNKBlzEeSscqBKt4v_3w _XM6u5RlzEeSscqBKt4v_3w _XM7V9RlzEeSscqBKt4v_3w" width="10" height="15">
+          <target xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.2"/>
+          <semanticElements xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.2"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_PSyJ4RlzEeSscqBKt4v_3w" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_PSyJ4hlzEeSscqBKt4v_3w"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_PSyJ4xlzEeSscqBKt4v_3w"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_PSyJ5BlzEeSscqBKt4v_3w" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_PSyJ5RlzEeSscqBKt4v_3w" red="204" green="242" blue="166"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_SLI3EBlzEeSscqBKt4v_3w" name="Bean2" outgoingEdges="_UiXNIxlzEeSscqBKt4v_3w _UiXNKBlzEeSscqBKt4v_3w" width="10" height="15">
+          <target xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.3"/>
+          <semanticElements xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.3"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_SLI3ERlzEeSscqBKt4v_3w" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_SLI3EhlzEeSscqBKt4v_3w"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_SLI3ExlzEeSscqBKt4v_3w"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_SLI3FBlzEeSscqBKt4v_3w" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_SLI3FRlzEeSscqBKt4v_3w" red="204" green="242" blue="166"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_VYwCkBlzEeSscqBKt4v_3w" name="Bean3" outgoingEdges="_XM7V8BlzEeSscqBKt4v_3w _XM7V9RlzEeSscqBKt4v_3w" width="10" height="15">
+          <target xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.4"/>
+          <semanticElements xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.4"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_VYwCkRlzEeSscqBKt4v_3w" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_VYwCkhlzEeSscqBKt4v_3w"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_VYwCkxlzEeSscqBKt4v_3w"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_VYwClBlzEeSscqBKt4v_3w" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_VYwClRlzEeSscqBKt4v_3w" red="204" green="242" blue="166"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_b9RU8BlyEeSscqBKt4v_3w" name="ref1" sourceNode="_493MwBlmEeSscqBKt4v_3w" targetNode="_E0H7ABllEeSscqBKt4v_3w">
+        <target xmi:type="entity:LEntityReference" href="My.entitymodel#/0/@packages.0/@types.1/@features.0"/>
+        <semanticElements xmi:type="entity:LEntityReference" href="My.entitymodel#/0/@packages.0/@types.1/@features.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_b9VmYBlyEeSscqBKt4v_3w" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entityReference']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_b9VmYRlyEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_b9VmYhlyEeSscqBKt4v_3w">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_b9VmYxlyEeSscqBKt4v_3w"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entityReference']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_UiV_ABlzEeSscqBKt4v_3w" sourceNode="_SJiUkBlzEeSscqBKt4v_3w" targetNode="_PRODoBlzEeSscqBKt4v_3w">
+        <target xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_UiWmEBlzEeSscqBKt4v_3w" targetArrow="InputClosedArrow" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_UiWmERlzEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_UiWmEhlzEeSscqBKt4v_3w">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_UiWmExlzEeSscqBKt4v_3w"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_UiWmFBlzEeSscqBKt4v_3w" sourceNode="_SJiUkBlzEeSscqBKt4v_3w" targetNode="_PSyJ4BlzEeSscqBKt4v_3w">
+        <target xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_UiWmFRlzEeSscqBKt4v_3w" targetArrow="InputClosedArrow" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_UiXNIBlzEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_UiXNIRlzEeSscqBKt4v_3w">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_UiXNIhlzEeSscqBKt4v_3w"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_UiXNIxlzEeSscqBKt4v_3w" sourceNode="_SLI3EBlzEeSscqBKt4v_3w" targetNode="_PRODoBlzEeSscqBKt4v_3w">
+        <target xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_UiXNJBlzEeSscqBKt4v_3w" targetArrow="InputClosedArrow" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_UiXNJRlzEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_UiXNJhlzEeSscqBKt4v_3w">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_UiXNJxlzEeSscqBKt4v_3w"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_UiXNKBlzEeSscqBKt4v_3w" sourceNode="_SLI3EBlzEeSscqBKt4v_3w" targetNode="_PSyJ4BlzEeSscqBKt4v_3w">
+        <target xmi:type="entity:LBean" href="My.entitymodel#/0/@packages.0/@types.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_UiX0MBlzEeSscqBKt4v_3w" targetArrow="InputClosedArrow" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_UiX0MRlzEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_UiX0MhlzEeSscqBKt4v_3w">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_UiX0MxlzEeSscqBKt4v_3w"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_XM6u4BlzEeSscqBKt4v_3w" name="myreference" sourceNode="_VXMjYBlzEeSscqBKt4v_3w" targetNode="_PRODoBlzEeSscqBKt4v_3w">
+        <target xmi:type="entity:LBeanReference" href="My.entitymodel#/0/@packages.0/@types.4/@features.0"/>
+        <semanticElements xmi:type="entity:LBeanReference" href="My.entitymodel#/0/@packages.0/@types.4/@features.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_XM6u4RlzEeSscqBKt4v_3w" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanReference']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_XM6u4hlzEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_XM6u4xlzEeSscqBKt4v_3w">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_XM6u5BlzEeSscqBKt4v_3w"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanReference']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_XM6u5RlzEeSscqBKt4v_3w" name="myreference" sourceNode="_VXMjYBlzEeSscqBKt4v_3w" targetNode="_PSyJ4BlzEeSscqBKt4v_3w">
+        <target xmi:type="entity:LBeanReference" href="My.entitymodel#/0/@packages.0/@types.4/@features.0"/>
+        <semanticElements xmi:type="entity:LBeanReference" href="My.entitymodel#/0/@packages.0/@types.4/@features.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_XM6u5hlzEeSscqBKt4v_3w" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanReference']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_XM6u5xlzEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_XM6u6BlzEeSscqBKt4v_3w">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_XM6u6RlzEeSscqBKt4v_3w"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanReference']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_XM7V8BlzEeSscqBKt4v_3w" name="myreference" sourceNode="_VYwCkBlzEeSscqBKt4v_3w" targetNode="_PRODoBlzEeSscqBKt4v_3w">
+        <target xmi:type="entity:LBeanReference" href="My.entitymodel#/0/@packages.0/@types.4/@features.0"/>
+        <semanticElements xmi:type="entity:LBeanReference" href="My.entitymodel#/0/@packages.0/@types.4/@features.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_XM7V8RlzEeSscqBKt4v_3w" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanReference']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_XM7V8hlzEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_XM7V8xlzEeSscqBKt4v_3w">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_XM7V9BlzEeSscqBKt4v_3w"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanReference']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_XM7V9RlzEeSscqBKt4v_3w" name="myreference" sourceNode="_VYwCkBlzEeSscqBKt4v_3w" targetNode="_PSyJ4BlzEeSscqBKt4v_3w">
+        <target xmi:type="entity:LBeanReference" href="My.entitymodel#/0/@packages.0/@types.4/@features.0"/>
+        <semanticElements xmi:type="entity:LBeanReference" href="My.entitymodel#/0/@packages.0/@types.4/@features.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_XM7V9hlzEeSscqBKt4v_3w" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanReference']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_XM7V9xlzEeSscqBKt4v_3w" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_XM7V-BlzEeSscqBKt4v_3w">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_XM7V-RlzEeSscqBKt4v_3w"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanReference']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_EF-8WRldEeSkHsTnYqWgoA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer"/>
+      <target xmi:type="entity:LEntityModel" href="My.entitymodel#/0"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>
