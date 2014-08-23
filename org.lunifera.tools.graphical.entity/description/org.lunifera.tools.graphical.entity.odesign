@@ -2,6 +2,7 @@
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="org.lunifera.tools.graphical.entity" version="8.1.0">
   <ownedViewpoints name="Entities" modelFileExtension="entitymodel">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Entities.diagram" domainClass="LEntityModel" enablePopupBars="true">
+      <layout xsi:type="description_1:OrderedTreeLayout" childrenExpression="[thisEObject.packages.types.subTypes/]" nodeMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']"/>
       <defaultLayer name="Default">
         <edgeMappings name="entitySuperType" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetFinderExpression="feature:superType">
           <style targetArrow="InputClosedArrow" sizeComputationExpression="2">
@@ -166,7 +167,9 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="LBeanAttribute" referenceName="features"/>
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="LBeanAttribute" referenceName="features">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="LBeanFeature" referenceName="annotationInfo" variableName="LBeanAnnotationInfo"/>
+                </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
