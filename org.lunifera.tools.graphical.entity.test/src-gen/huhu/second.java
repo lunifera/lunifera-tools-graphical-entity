@@ -19,13 +19,13 @@ public class second {
   @Transient
   private boolean disposed;
   
-  @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "REF1")
-  private sdfsdf ref1;
-  
   @Id
   @GeneratedValue
   private Long id;
+  
+  @ManyToOne(fetch = FetchType.LAZY)
+  @JoinColumn(name = "MYREFERENCE")
+  private sdfsdf myreference;
   
   /**
    * Returns true, if the object is disposed. 
@@ -61,22 +61,6 @@ public class second {
   }
   
   /**
-   * Returns the ref1 property or <code>null</code> if not present.
-   */
-  public sdfsdf getRef1() {
-    checkDisposed();
-    return this.ref1;
-  }
-  
-  /**
-   * Sets the ref1 property to this instance.
-   */
-  public void setRef1(final sdfsdf ref1) {
-    checkDisposed();
-    this.ref1 = ref1;
-  }
-  
-  /**
    * Returns the id property or <code>null</code> if not present.
    */
   public Long getId() {
@@ -90,5 +74,21 @@ public class second {
   public void setId(final Long id) {
     checkDisposed();
     this.id = id;
+  }
+  
+  /**
+   * Returns the myreference property or <code>null</code> if not present.
+   */
+  public sdfsdf getMyreference() {
+    checkDisposed();
+    return this.myreference;
+  }
+  
+  /**
+   * Sets the myreference property to this instance.
+   */
+  public void setMyreference(final sdfsdf myreference) {
+    checkDisposed();
+    this.myreference = myreference;
   }
 }

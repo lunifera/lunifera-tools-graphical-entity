@@ -13,8 +13,8 @@ package huhu {
 	}
 	
 	dto secondDto wraps second {
-		inherit ref ref1 mapto sdfsdfDto;
 		inherit var id;
+		inherit ref myreference mapto sdfsdfDto;
 	}
 	
 	dto Bean1Dto wraps Bean1 {
@@ -24,6 +24,7 @@ package huhu {
 	}
 	
 	dto Bean3Dto wraps Bean3 {
+		inherit var firstname;
 		inherit ref myreference;
 	}
 	

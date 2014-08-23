@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="org.lunifera.tools.graphical.entity" version="8.1.0">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="org.lunifera.tools.graphical.entity" version="8.1.0">
   <ownedViewpoints name="Entities" modelFileExtension="entitymodel">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Entities.diagram" domainClass="LEntityModel" enablePopupBars="true">
+      <filters xsi:type="filter:CompositeFilterDescription" name="hideImports">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']" viewConditionExpression="[self.target.eResource().toString().contains('entitymodel')/]"/>
+      </filters>
       <layout xsi:type="description_1:OrderedTreeLayout" childrenExpression="[thisEObject.packages.types.subTypes/]" nodeMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']"/>
       <defaultLayer name="Default">
         <edgeMappings name="entitySuperType" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetFinderExpression="feature:superType">
@@ -39,7 +42,7 @@
         <containerMappings name="LTypedPackage" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" domainClass="types.LTypedPackage">
           <subContainerMappings name="LEntityContainer" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" semanticCandidatesExpression="feature:types" domainClass="entity.LEntity" childrenPresentation="List">
             <subNodeMappings name="LEntityAttributeNode" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" semanticCandidatesExpression="feature:features" domainClass="entity.LEntityAttribute">
-              <style xsi:type="style:SquareDescription" labelExpression="feature:typedName" labelAlignment="LEFT" resizeKind="NSEW">
+              <style xsi:type="style:SquareDescription" labelExpression="feature:typedName" labelAlignment="LEFT" sizeComputationExpression="0" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -54,7 +57,7 @@
           </subContainerMappings>
           <subContainerMappings name="LBeanContainer" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" domainClass="entity.LBean" childrenPresentation="List">
             <subNodeMappings name="LBeanAttributeNode" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" semanticCandidatesExpression="feature:features" domainClass="entity.LBeanAttribute">
-              <style xsi:type="style:SquareDescription" labelFormat="bold" labelExpression="[thisEObject.typedName/]" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+              <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.typedName/]" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -127,6 +130,12 @@
                     <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="var:target"/>
                     <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="myreference"/>
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="entity.LEntityFeature" referenceName="annotationInfo" variableName="annotationInfoInstance"/>
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="LMultiplicity" referenceName="multiplicity" variableName="entityReferenceMultiplicity">
+                      <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:entityReferenceMultiplicity">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="lower" valueExpression="ZERO"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="upper" valueExpression="ONE"/>
+                      </subModelOperations>
+                    </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
@@ -144,6 +153,12 @@
                     <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="var:target"/>
                     <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="myreference"/>
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="LBeanFeature" referenceName="annotationInfo" variableName="beanFeatureInstance"/>
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="LMultiplicity" referenceName="multiplicity" variableName="beanReferenceMultiplicity">
+                      <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:beanReferenceMultiplicity">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="lower" valueExpression="ZERO"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="upper" valueExpression="ONE"/>
+                      </subModelOperations>
+                    </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>

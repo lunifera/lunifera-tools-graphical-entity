@@ -13,6 +13,9 @@ public class Bean3 implements Serializable {
   private boolean disposed;
   
   @Basic
+  private String firstname;
+  
+  @Basic
   @Embedded
   private Bean1 myreference;
   
@@ -48,6 +51,22 @@ public class Bean3 implements Serializable {
       return;
     }
     disposed = true;
+  }
+  
+  /**
+   * Returns the firstname property or <code>null</code> if not present.
+   */
+  public String getFirstname() {
+    checkDisposed();
+    return this.firstname;
+  }
+  
+  /**
+   * Sets the firstname property to this instance.
+   */
+  public void setFirstname(final String firstname) {
+    checkDisposed();
+    this.firstname = firstname;
   }
   
   /**

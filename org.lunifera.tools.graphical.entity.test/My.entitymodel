@@ -8,13 +8,16 @@ import org.lunifera.dsl.common.datatypes.my.*;
 	}
 
 	entity second {
-		ref sdfsdf ref1;
+		
 		id Long id;
+	ref sdfsdf [0 .. 1] myreference;
 	}
 
 	bean Bean1 { }
 	bean Bean2 extends Bean1 { }
 	bean Bean3 {
-		ref Bean1 myreference;
+		
+	var String firstname;
+		ref Bean1 [0 .. 1] myreference;
 	}
 }
