@@ -1,0 +1,22 @@
+package org.my.example {
+
+	import org.lunifera.dsl.common.datatypes.my.*;
+
+	entity MyEntity extends MyParent {
+
+		var String value;
+		ref MyChild childs;
+	}
+
+	entity MyChild extends MyParent { }
+
+	entity MyParent {
+		id long pid;
+	}
+
+	entity asdf {
+		var Date bdate;
+
+	}
+
+}

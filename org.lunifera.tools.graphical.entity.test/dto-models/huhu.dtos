@@ -8,12 +8,12 @@ package huhu {
 
 
 	dto sdfsdfDto wraps sdfsdf {
-		inherit var id;
+		inherit var pid;
 		inherit var date;
 	}
 	
 	dto secondDto wraps second {
-		inherit var id;
+		inherit var pid;
 		inherit ref myreference mapto sdfsdfDto;
 	}
 	

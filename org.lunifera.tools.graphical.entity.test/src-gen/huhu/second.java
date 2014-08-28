@@ -21,7 +21,7 @@ public class second {
   
   @Id
   @GeneratedValue
-  private Long id;
+  private Long pid;
   
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "MYREFERENCE")
@@ -61,19 +61,19 @@ public class second {
   }
   
   /**
-   * Returns the id property or <code>null</code> if not present.
+   * Returns the pid property or <code>null</code> if not present.
    */
-  public Long getId() {
+  public Long getPid() {
     checkDisposed();
-    return this.id;
+    return this.pid;
   }
   
   /**
-   * Sets the id property to this instance.
+   * Sets the pid property to this instance.
    */
-  public void setId(final Long id) {
+  public void setPid(final Long pid) {
     checkDisposed();
-    this.id = id;
+    this.pid = pid;
   }
   
   /**

@@ -1,23 +1,25 @@
 package huhu {
-	
-import org.lunifera.dsl.common.datatypes.my.*;
+
+	import org.lunifera.dsl.common.datatypes.my.*;
 	import org.lunifera.dsl.common.datatypes.my.*;
 	entity sdfsdf {
-		id String id;
+		id String pid;
 		var Date date;
 	}
 
 	entity second {
-		
-		id Long id;
-	ref sdfsdf [0 .. 1] myreference;
+
+		id Long pid;
+		ref sdfsdf [0 .. 1] myreference;
 	}
 
 	bean Bean1 { }
+
 	bean Bean2 extends Bean1 { }
+
 	bean Bean3 {
-		
-	var String firstname;
+
+		var String firstname;
 		ref Bean1 [0 .. 1] myreference;
 	}
 }

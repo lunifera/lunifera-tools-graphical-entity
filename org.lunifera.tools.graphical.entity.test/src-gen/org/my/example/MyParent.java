@@ -1,28 +1,29 @@
-package huhu;
+package org.my.example;
 
-import java.util.Date;
-import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name = "SDFSDF")
-@DiscriminatorValue(value = "SDFSDF")
+@Table(name = "MY_PARENT")
+@Inheritance(strategy = InheritanceType.JOINED)
+@DiscriminatorColumn(name = "DISC", discriminatorType = DiscriminatorType.STRING)
+@DiscriminatorValue(value = "MY_PARENT")
 @SuppressWarnings("all")
-public class sdfsdf {
+public class MyParent {
   @Transient
   private boolean disposed;
   
   @Id
   @GeneratedValue
-  private String pid;
-  
-  @Column(name = "DATE")
-  private Date date;
+  private long pid;
   
   /**
    * Returns true, if the object is disposed. 
@@ -60,7 +61,7 @@ public class sdfsdf {
   /**
    * Returns the pid property or <code>null</code> if not present.
    */
-  public String getPid() {
+  public long getPid() {
     checkDisposed();
     return this.pid;
   }
@@ -68,24 +69,8 @@ public class sdfsdf {
   /**
    * Sets the pid property to this instance.
    */
-  public void setPid(final String pid) {
+  public void setPid(final long pid) {
     checkDisposed();
     this.pid = pid;
-  }
-  
-  /**
-   * Returns the date property or <code>null</code> if not present.
-   */
-  public Date getDate() {
-    checkDisposed();
-    return this.date;
-  }
-  
-  /**
-   * Sets the date property to this instance.
-   */
-  public void setDate(final Date date) {
-    checkDisposed();
-    this.date = date;
   }
 }
