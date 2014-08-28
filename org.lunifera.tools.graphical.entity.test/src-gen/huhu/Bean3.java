@@ -1,10 +1,8 @@
 package huhu;
 
-import huhu.Bean1;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Embeddable;
-import javax.persistence.Embedded;
 import javax.persistence.Transient;
 
 @Embeddable
@@ -14,10 +12,6 @@ public class Bean3 implements Serializable {
   
   @Basic
   private String firstname;
-  
-  @Basic
-  @Embedded
-  private Bean1 myreference;
   
   /**
    * Returns true, if the object is disposed. 
@@ -67,21 +61,5 @@ public class Bean3 implements Serializable {
   public void setFirstname(final String firstname) {
     checkDisposed();
     this.firstname = firstname;
-  }
-  
-  /**
-   * Returns the myreference property or <code>null</code> if not present.
-   */
-  public Bean1 getMyreference() {
-    checkDisposed();
-    return this.myreference;
-  }
-  
-  /**
-   * Sets the myreference property to this instance.
-   */
-  public void setMyreference(final Bean1 myreference) {
-    checkDisposed();
-    this.myreference = myreference;
   }
 }

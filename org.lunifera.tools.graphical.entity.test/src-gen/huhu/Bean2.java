@@ -1,11 +1,16 @@
 package huhu;
 
 import huhu.Bean1;
+import java.util.Date;
+import javax.persistence.Basic;
 import javax.persistence.Embeddable;
 
 @Embeddable
 @SuppressWarnings("all")
 public class Bean2 extends Bean1 {
+  @Basic
+  private Date pdate;
+  
   /**
    * Checks whether the object is disposed.
    * @throws RuntimeException if the object is disposed.
@@ -28,5 +33,21 @@ public class Bean2 extends Bean1 {
       return;
     }
     super.dispose();
+  }
+  
+  /**
+   * Returns the pdate property or <code>null</code> if not present.
+   */
+  public Date getPdate() {
+    checkDisposed();
+    return this.pdate;
+  }
+  
+  /**
+   * Sets the pdate property to this instance.
+   */
+  public void setPdate(final Date pdate) {
+    checkDisposed();
+    this.pdate = pdate;
   }
 }

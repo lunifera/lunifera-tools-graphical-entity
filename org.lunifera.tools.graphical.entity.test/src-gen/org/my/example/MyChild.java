@@ -1,5 +1,6 @@
 package org.my.example;
 
+import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -10,6 +11,9 @@ import org.my.example.MyParent;
 @DiscriminatorValue(value = "MY_CHILD")
 @SuppressWarnings("all")
 public class MyChild extends MyParent {
+  @Column(name = "NAME")
+  private String name;
+  
   /**
    * Checks whether the object is disposed.
    * @throws RuntimeException if the object is disposed.
@@ -32,5 +36,21 @@ public class MyChild extends MyParent {
       return;
     }
     super.dispose();
+  }
+  
+  /**
+   * Returns the name property or <code>null</code> if not present.
+   */
+  public String getName() {
+    checkDisposed();
+    return this.name;
+  }
+  
+  /**
+   * Sets the name property to this instance.
+   */
+  public void setName(final String name) {
+    checkDisposed();
+    this.name = name;
   }
 }

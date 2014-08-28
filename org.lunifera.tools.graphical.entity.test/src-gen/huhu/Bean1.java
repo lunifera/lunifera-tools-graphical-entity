@@ -1,6 +1,8 @@
 package huhu;
 
 import java.io.Serializable;
+import java.util.Date;
+import javax.persistence.Basic;
 import javax.persistence.Embeddable;
 import javax.persistence.Transient;
 
@@ -8,6 +10,12 @@ import javax.persistence.Transient;
 @SuppressWarnings("all")
 public class Bean1 implements Serializable {
   private boolean disposed;
+  
+  @Basic
+  private String pid;
+  
+  @Basic
+  private Date pdate;
   
   /**
    * Returns true, if the object is disposed. 
@@ -41,5 +49,37 @@ public class Bean1 implements Serializable {
       return;
     }
     disposed = true;
+  }
+  
+  /**
+   * Returns the pid property or <code>null</code> if not present.
+   */
+  public String getPid() {
+    checkDisposed();
+    return this.pid;
+  }
+  
+  /**
+   * Sets the pid property to this instance.
+   */
+  public void setPid(final String pid) {
+    checkDisposed();
+    this.pid = pid;
+  }
+  
+  /**
+   * Returns the pdate property or <code>null</code> if not present.
+   */
+  public Date getPdate() {
+    checkDisposed();
+    return this.pdate;
+  }
+  
+  /**
+   * Sets the pdate property to this instance.
+   */
+  public void setPdate(final Date pdate) {
+    checkDisposed();
+    this.pdate = pdate;
   }
 }

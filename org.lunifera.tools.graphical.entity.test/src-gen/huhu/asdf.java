@@ -1,17 +1,22 @@
 package huhu;
 
+import java.util.Date;
+import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name = "HAHA")
-@DiscriminatorValue(value = "HAHA")
+@Table(name = "ASDF")
+@DiscriminatorValue(value = "ASDF")
 @SuppressWarnings("all")
-public class Haha {
+public class asdf {
   @Transient
   private boolean disposed;
+  
+  @Column(name = "BDATE")
+  private Date bdate;
   
   /**
    * Returns true, if the object is disposed. 
@@ -44,5 +49,21 @@ public class Haha {
       return;
     }
     disposed = true;
+  }
+  
+  /**
+   * Returns the bdate property or <code>null</code> if not present.
+   */
+  public Date getBdate() {
+    checkDisposed();
+    return this.bdate;
+  }
+  
+  /**
+   * Sets the bdate property to this instance.
+   */
+  public void setBdate(final Date bdate) {
+    checkDisposed();
+    this.bdate = bdate;
   }
 }

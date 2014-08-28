@@ -8,15 +8,11 @@ package org.my.example {
 		ref MyChild childs;
 	}
 
-	entity MyChild extends MyParent { }
-
-	entity MyParent {
-		id long pid;
+	entity MyChild extends MyParent {
+		var String name;
 	}
 
-	entity asdf {
-		var Date bdate;
-
-	}
-
+	entity MyParent { 
+		id long pid ;
+	} 
 }

@@ -12,14 +12,11 @@ package org.my.example {
 	}
 	
 	dto MyChildDto extends MyParentDto wraps MyChild {
+		inherit var name;
 	}
 	
 	dto MyParentDto wraps MyParent {
 		inherit var pid;
-	}
-	
-	dto asdfDto wraps asdf {
-		inherit var bdate;
 	}
 	
 }

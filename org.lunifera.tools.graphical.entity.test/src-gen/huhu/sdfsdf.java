@@ -21,8 +21,8 @@ public class sdfsdf {
   @GeneratedValue
   private String pid;
   
-  @Column(name = "DATE")
-  private Date date;
+  @Column(name = "PDATE")
+  private Date pdate;
   
   /**
    * Returns true, if the object is disposed. 
@@ -74,18 +74,18 @@ public class sdfsdf {
   }
   
   /**
-   * Returns the date property or <code>null</code> if not present.
+   * Returns the pdate property or <code>null</code> if not present.
    */
-  public Date getDate() {
+  public Date getPdate() {
     checkDisposed();
-    return this.date;
+    return this.pdate;
   }
   
   /**
-   * Sets the date property to this instance.
+   * Sets the pdate property to this instance.
    */
-  public void setDate(final Date date) {
+  public void setPdate(final Date pdate) {
     checkDisposed();
-    this.date = date;
+    this.pdate = pdate;
   }
 }
