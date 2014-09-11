@@ -21,9 +21,9 @@
 	<parent>
 		<groupId>org.lunifera.releng.maven</groupId>
 		<artifactId>lunifera-releng-maven-parent-tycho</artifactId>
-		<version>0.12.3-SNAPSHOT</version>
+		<version>0.10.1-SNAPSHOT</version>
 	</parent>
-	
+
 	<url>${lunifera.site.repository.url}</url>
 	<scm>
 		<url>${lunifera.scm.url}</url>
@@ -61,11 +61,12 @@
 				</property>
 			</activation>
 			<modules>
-				<module>org.lunifera.ide.p2</module>
+				<module>org.lunifera.tools.graphical.entity.lib</module>
+				<module>org.lunifera.tools.graphical.entity.test</module>
 			</modules>
 		</profile>
 	</profiles>
-	
+
 	<build>
 		<pluginManagement>
 			<plugins>

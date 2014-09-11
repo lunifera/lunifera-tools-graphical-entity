@@ -2,9 +2,9 @@
 <?eclipse version="3.0"?>
 <plugin>
   <extension point="org.eclipse.sirius.componentization">
-    <component class="defaultpackage.Activator"
+    <component class="org.lunifera.tools.graphical.entity.lib.Activator"
                id="org.lunifera.tools.graphical.entity.viewmodel"
-	       name="My">
+	       name="EntityODesign">
     </component>
   </extension>
 </plugin>
