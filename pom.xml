@@ -50,6 +50,8 @@
 	<modules>
 		<module>org.lunifera.tools.graphical.entity.lib</module>
 		<module>org.lunifera.tools.graphical.entity.test</module>
+		<module>org.lunifera.tools.graphical.entity.feature.ui</module>
+		<module>org.lunifera.tools.graphical.entity.p2</module>
 	</modules>
 
 	<profiles>
@@ -63,6 +65,7 @@
 			<modules>
 				<module>org.lunifera.tools.graphical.entity.lib</module>
 				<module>org.lunifera.tools.graphical.entity.test</module>
+				<module>org.lunifera.tools.graphical.entity.p2</module>
 			</modules>
 		</profile>
 	</profiles>
