@@ -1,4 +1,4 @@
-package org.my.example.dtos {
+package org.my.example {
 	
 	/* Imports the original entity package */
 	import org.my.example.*;
