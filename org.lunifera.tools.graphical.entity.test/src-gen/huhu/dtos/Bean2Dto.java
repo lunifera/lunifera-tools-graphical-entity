@@ -1,32 +1,12 @@
-package huhu;
+package huhu.dtos;
 
+import huhu.dtos.Bean1Dto;
 import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.Basic;
-import javax.persistence.Embeddable;
-import javax.persistence.Transient;
 
-@Embeddable
 @SuppressWarnings("all")
-public class Bean1 implements Serializable {
-  private boolean disposed;
-  
-  @Basic
-  private String pid;
-  
-  @Transient
-  @Basic
+public class Bean2Dto extends Bean1Dto implements Serializable {
   private Date pdate;
-  
-  /**
-   * Returns true, if the object is disposed. 
-   * Disposed means, that it is prepared for garbage collection and may not be used anymore. 
-   * Accessing objects that are already disposed will cause runtime exceptions.
-   */
-  @Transient
-  public boolean isDisposed() {
-    return this.disposed;
-  }
   
   /**
    * Checks whether the object is disposed.
@@ -49,23 +29,7 @@ public class Bean1 implements Serializable {
     if (isDisposed()) {
       return;
     }
-    disposed = true;
-  }
-  
-  /**
-   * Returns the pid property or <code>null</code> if not present.
-   */
-  public String getPid() {
-    checkDisposed();
-    return this.pid;
-  }
-  
-  /**
-   * Sets the pid property to this instance.
-   */
-  public void setPid(final String pid) {
-    checkDisposed();
-    this.pid = pid;
+    super.dispose();
   }
   
   /**
@@ -77,10 +41,13 @@ public class Bean1 implements Serializable {
   }
   
   /**
-   * Sets the pdate property to this instance.
+   * Sets the <code>pdate</code> property to this instance.
+   * 
+   * @param pdate - the property
+   * @throws RuntimeException if instance is <code>disposed</code>
+   * 
    */
   public void setPdate(final Date pdate) {
-    checkDisposed();
-    this.pdate = pdate;
+    firePropertyChange("pdate", this.pdate, this.pdate = pdate );
   }
 }

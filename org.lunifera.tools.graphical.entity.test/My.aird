@@ -610,14 +610,13 @@
   <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/javax.persistence.Basic#javax.persistence.Basic"/>
   <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/javax.persistence.GenerationType#javax.persistence.GenerationType"/>
   <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/javax.persistence.FetchType#javax.persistence.FetchType"/>
-  <models xmi:type="entity:LEntityModel" href="src/My.entitymodel#/"/>
+  <models xmi:type="entity:LEntityModel" href="src/My.entitymodel#/0"/>
   <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/javax.persistence.ManyToOne#javax.persistence.ManyToOne"/>
   <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/javax.persistence.JoinColumn#javax.persistence.JoinColumn"/>
   <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/javax.persistence.CascadeType#javax.persistence.CascadeType"/>
   <models xmi:type="types_1:JvmAnnotationType" href="java:/Objects/javax.persistence.ForeignKey#javax.persistence.ForeignKey"/>
   <models xmi:type="types_1:JvmEnumerationType" href="java:/Objects/javax.persistence.ConstraintMode#javax.persistence.ConstraintMode"/>
   <models xmi:type="entity:LEntityModel" href="src/MyOther.entitymodel#/0"/>
-  <models xmi:type="trace:DebugTraceRegion" href="src-gen/org/my/example/.MyChild.java._trace#/"/>
   <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_NpAYUAaeEeS2asEwlwAvhA" initialized="true">
     <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_0YYc4BBGEeS47JBNa6_ejQ" name="my.diagram">
       <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_0ZX7YBBGEeS47JBNa6_ejQ" source="GMF_DIAGRAMS">
@@ -776,8 +775,8 @@
               <children xmi:type="notation:Node" xmi:id="_yRNTVC62EeSZXImjWpCuBQ" type="3009" element="_yP0zbi62EeSZXImjWpCuBQ">
                 <children xmi:type="notation:Node" xmi:id="_yRN6YC62EeSZXImjWpCuBQ" type="5004"/>
                 <children xmi:type="notation:Node" xmi:id="_yRN6YS62EeSZXImjWpCuBQ" type="7003">
-                  <children xmi:type="notation:Node" xmi:id="_mQbPwC67EeSL8II7LkxeKQ" type="3010" element="_mQEDYC67EeSL8II7LkxeKQ">
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_mQbPwS67EeSL8II7LkxeKQ"/>
+                  <children xmi:type="notation:Node" xmi:id="_VMlMMDmbEeS93KxXcXdI2w" type="3010" element="_mQEDYC67EeSL8II7LkxeKQ">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_VMlMMTmbEeS93KxXcXdI2w"/>
                   </children>
                   <styles xmi:type="notation:SortingStyle" xmi:id="_yRN6Yi62EeSZXImjWpCuBQ"/>
                   <styles xmi:type="notation:FilteringStyle" xmi:id="_yRN6Yy62EeSZXImjWpCuBQ"/>
@@ -797,102 +796,70 @@
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_yRN6ZS62EeSZXImjWpCuBQ" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRN6Zi62EeSZXImjWpCuBQ" x="159" y="210"/>
               </children>
-              <children xmi:type="notation:Node" xmi:id="_BFb8oC63EeSZXImjWpCuBQ" type="3009" element="_yP0zoS62EeSZXImjWpCuBQ">
-                <children xmi:type="notation:Node" xmi:id="_BFcjsC63EeSZXImjWpCuBQ" type="5004"/>
-                <children xmi:type="notation:Node" xmi:id="_BFcjsS63EeSZXImjWpCuBQ" type="7003">
-                  <children xmi:type="notation:Node" xmi:id="_BFdKwC63EeSZXImjWpCuBQ" type="3010" element="_yP0zpy62EeSZXImjWpCuBQ">
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_BFdKwS63EeSZXImjWpCuBQ"/>
+              <children xmi:type="notation:Node" xmi:id="_qfSU0DmbEeS93KxXcXdI2w" type="3009" element="_yP0zoS62EeSZXImjWpCuBQ">
+                <children xmi:type="notation:Node" xmi:id="_qfSU0zmbEeS93KxXcXdI2w" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_qfSU1DmbEeS93KxXcXdI2w" type="7003">
+                  <children xmi:type="notation:Node" xmi:id="_q3bIADmbEeS93KxXcXdI2w" type="3010" element="_yP0zpy62EeSZXImjWpCuBQ">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_q3bIATmbEeS93KxXcXdI2w"/>
                   </children>
-                  <styles xmi:type="notation:SortingStyle" xmi:id="_BFcjsi63EeSZXImjWpCuBQ"/>
-                  <styles xmi:type="notation:FilteringStyle" xmi:id="_BFcjsy63EeSZXImjWpCuBQ"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_qfSU1TmbEeS93KxXcXdI2w"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_qfSU1jmbEeS93KxXcXdI2w"/>
                 </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_BFb8oS63EeSZXImjWpCuBQ" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BFb8oi63EeSZXImjWpCuBQ" x="35" y="415" width="100" height="150"/>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_qfSU0TmbEeS93KxXcXdI2w" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qfSU0jmbEeS93KxXcXdI2w" x="39" y="395"/>
               </children>
               <styles xmi:type="notation:SortingStyle" xmi:id="_yQ4jMS62EeSZXImjWpCuBQ"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_yQ4jMi62EeSZXImjWpCuBQ"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_yQ38IS62EeSZXImjWpCuBQ" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQ38Ii62EeSZXImjWpCuBQ" x="240" height="555"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQ38Ii62EeSZXImjWpCuBQ" x="240" height="615"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_yQ4jMy62EeSZXImjWpCuBQ" type="2002" element="_yP0zfy62EeSZXImjWpCuBQ">
-            <children xmi:type="notation:Node" xmi:id="_yQ5KQC62EeSZXImjWpCuBQ" type="5006"/>
-            <children xmi:type="notation:Node" xmi:id="_yQ5KQS62EeSZXImjWpCuBQ" type="7001">
-              <children xmi:type="notation:Node" xmi:id="_yRQ9sC62EeSZXImjWpCuBQ" type="3009" element="_yP0zhS62EeSZXImjWpCuBQ">
-                <children xmi:type="notation:Node" xmi:id="_yRQ9sy62EeSZXImjWpCuBQ" type="5004"/>
-                <children xmi:type="notation:Node" xmi:id="_yRRkwC62EeSZXImjWpCuBQ" type="7003">
-                  <children xmi:type="notation:Node" xmi:id="_yRTZ8C62EeSZXImjWpCuBQ" type="3010" element="_yP0ziy62EeSZXImjWpCuBQ">
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_yRTZ8S62EeSZXImjWpCuBQ"/>
+          <children xmi:type="notation:Node" xmi:id="_Ltj3kDmcEeSHUtWdMxc0ww" type="2002" element="_Lsm1UDmcEeSHUtWdMxc0ww">
+            <children xmi:type="notation:Node" xmi:id="_LtpXIDmcEeSHUtWdMxc0ww" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_Ltp-MDmcEeSHUtWdMxc0ww" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_LtrMUDmcEeSHUtWdMxc0ww" type="3009" element="_LspRkDmcEeSHUtWdMxc0ww">
+                <children xmi:type="notation:Node" xmi:id="_LtrzYDmcEeSHUtWdMxc0ww" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_LtsacDmcEeSHUtWdMxc0ww" type="7003">
+                  <children xmi:type="notation:Node" xmi:id="_LtuPoDmcEeSHUtWdMxc0ww" type="3010" element="_Lsrt0DmcEeSHUtWdMxc0ww">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_LtuPoTmcEeSHUtWdMxc0ww"/>
                   </children>
-                  <styles xmi:type="notation:SortingStyle" xmi:id="_yRRkwS62EeSZXImjWpCuBQ"/>
-                  <styles xmi:type="notation:FilteringStyle" xmi:id="_yRRkwi62EeSZXImjWpCuBQ"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_LtsacTmcEeSHUtWdMxc0ww"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_LtsacjmcEeSHUtWdMxc0ww"/>
                 </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_yRQ9sS62EeSZXImjWpCuBQ" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRQ9si62EeSZXImjWpCuBQ" x="255" y="418"/>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_LtrMUTmcEeSHUtWdMxc0ww" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LtrMUjmcEeSHUtWdMxc0ww" x="95" y="418"/>
               </children>
-              <children xmi:type="notation:Node" xmi:id="_yRRkwy62EeSZXImjWpCuBQ" type="3009" element="_yP0zkC62EeSZXImjWpCuBQ">
-                <children xmi:type="notation:Node" xmi:id="_yRRkxi62EeSZXImjWpCuBQ" type="5004"/>
-                <children xmi:type="notation:Node" xmi:id="_yRSL0C62EeSZXImjWpCuBQ" type="7003">
-                  <children xmi:type="notation:Node" xmi:id="_i7g-4C66EeSL8II7LkxeKQ" type="3010" element="_i7XN4C66EeSL8II7LkxeKQ">
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_i7g-4S66EeSL8II7LkxeKQ"/>
+              <children xmi:type="notation:Node" xmi:id="_LtsaczmcEeSHUtWdMxc0ww" type="3009" element="_LsqfsDmcEeSHUtWdMxc0ww">
+                <children xmi:type="notation:Node" xmi:id="_LttBgDmcEeSHUtWdMxc0ww" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_LttBgTmcEeSHUtWdMxc0ww" type="7003">
+                  <children xmi:type="notation:Node" xmi:id="_Ltu2sDmcEeSHUtWdMxc0ww" type="3010" element="_LssU4DmcEeSHUtWdMxc0ww">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_Ltu2sTmcEeSHUtWdMxc0ww"/>
                   </children>
-                  <styles xmi:type="notation:SortingStyle" xmi:id="_yRSL0S62EeSZXImjWpCuBQ"/>
-                  <styles xmi:type="notation:FilteringStyle" xmi:id="_yRSL0i62EeSZXImjWpCuBQ"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_LttBgjmcEeSHUtWdMxc0ww"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_LttBgzmcEeSHUtWdMxc0ww"/>
                 </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_yRRkxC62EeSZXImjWpCuBQ" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRRkxS62EeSZXImjWpCuBQ" x="159" y="210"/>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_LtsadDmcEeSHUtWdMxc0ww" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LtsadTmcEeSHUtWdMxc0ww" x="31" y="210"/>
               </children>
-              <children xmi:type="notation:Node" xmi:id="_yRSL0y62EeSZXImjWpCuBQ" type="3009" element="_yP0zli62EeSZXImjWpCuBQ">
-                <children xmi:type="notation:Node" xmi:id="_yRSL1i62EeSZXImjWpCuBQ" type="5004"/>
-                <children xmi:type="notation:Node" xmi:id="_yRSL1y62EeSZXImjWpCuBQ" type="7003">
-                  <children xmi:type="notation:Node" xmi:id="_yRTZ8i62EeSZXImjWpCuBQ" type="3010" element="_yP0znC62EeSZXImjWpCuBQ">
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_yRTZ8y62EeSZXImjWpCuBQ"/>
+              <children xmi:type="notation:Node" xmi:id="_LttBhDmcEeSHUtWdMxc0ww" type="3009" element="_LsrGwDmcEeSHUtWdMxc0ww">
+                <children xmi:type="notation:Node" xmi:id="_LttokDmcEeSHUtWdMxc0ww" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_LttokTmcEeSHUtWdMxc0ww" type="7003">
+                  <children xmi:type="notation:Node" xmi:id="_Ltu2sjmcEeSHUtWdMxc0ww" type="3010" element="_LstjADmcEeSHUtWdMxc0ww">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_Ltu2szmcEeSHUtWdMxc0ww"/>
                   </children>
-                  <styles xmi:type="notation:SortingStyle" xmi:id="_yRSL2C62EeSZXImjWpCuBQ"/>
-                  <styles xmi:type="notation:FilteringStyle" xmi:id="_yRSL2S62EeSZXImjWpCuBQ"/>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_LttokjmcEeSHUtWdMxc0ww"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_LttokzmcEeSHUtWdMxc0ww"/>
                 </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_yRSL1C62EeSZXImjWpCuBQ" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRSL1S62EeSZXImjWpCuBQ" x="255" y="30"/>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_LttBhTmcEeSHUtWdMxc0ww" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LttBhjmcEeSHUtWdMxc0ww" x="95" y="30"/>
               </children>
-              <styles xmi:type="notation:SortingStyle" xmi:id="_yQ5KQi62EeSZXImjWpCuBQ"/>
-              <styles xmi:type="notation:FilteringStyle" xmi:id="_yQ5KQy62EeSZXImjWpCuBQ"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_Ltp-MTmcEeSHUtWdMxc0ww"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_Ltp-MjmcEeSHUtWdMxc0ww"/>
             </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_yQ4jNC62EeSZXImjWpCuBQ" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQ4jNS62EeSZXImjWpCuBQ" x="748" width="447"/>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Ltj3kTmcEeSHUtWdMxc0ww" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ltj3kjmcEeSHUtWdMxc0ww"/>
           </children>
           <styles xmi:type="notation:DiagramStyle" xmi:id="_yQKKci62EeSZXImjWpCuBQ"/>
-          <edges xmi:type="notation:Edge" xmi:id="_yRhcYC62EeSZXImjWpCuBQ" type="4001" element="_yP0zrC62EeSZXImjWpCuBQ" source="_yRQ9sC62EeSZXImjWpCuBQ" target="_yRSL0y62EeSZXImjWpCuBQ">
-            <children xmi:type="notation:Node" xmi:id="_yRiqgC62EeSZXImjWpCuBQ" type="6001">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRiqgS62EeSZXImjWpCuBQ" y="-10"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_yRj4oC62EeSZXImjWpCuBQ" type="6002">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRj4oS62EeSZXImjWpCuBQ" y="10"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_yRkfsC62EeSZXImjWpCuBQ" type="6003">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRkfsS62EeSZXImjWpCuBQ" y="10"/>
-            </children>
-            <styles xmi:type="notation:ConnectorStyle" xmi:id="_yRhcYS62EeSZXImjWpCuBQ"/>
-            <styles xmi:type="notation:FontStyle" xmi:id="_yRhcYi62EeSZXImjWpCuBQ" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yRhcYy62EeSZXImjWpCuBQ" points="[0, 0, 0, 270]$[0, -270, 0, 0]"/>
-            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yRuQsC62EeSZXImjWpCuBQ" id="(0.5,0.0)"/>
-            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yRu3wC62EeSZXImjWpCuBQ" id="(0.5,1.0)"/>
-          </edges>
-          <edges xmi:type="notation:Edge" xmi:id="_yRu3wS62EeSZXImjWpCuBQ" type="4001" element="_yP0zsS62EeSZXImjWpCuBQ" source="_yRRkwy62EeSZXImjWpCuBQ" target="_yRSL0y62EeSZXImjWpCuBQ">
-            <children xmi:type="notation:Node" xmi:id="_yRve0C62EeSZXImjWpCuBQ" type="6001">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRve0S62EeSZXImjWpCuBQ" y="-10"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_yRve0i62EeSZXImjWpCuBQ" type="6002">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRve0y62EeSZXImjWpCuBQ" y="10"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_yRve1C62EeSZXImjWpCuBQ" type="6003">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRve1S62EeSZXImjWpCuBQ" y="10"/>
-            </children>
-            <styles xmi:type="notation:ConnectorStyle" xmi:id="_yRu3wi62EeSZXImjWpCuBQ"/>
-            <styles xmi:type="notation:FontStyle" xmi:id="_yRu3wy62EeSZXImjWpCuBQ" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yRu3xC62EeSZXImjWpCuBQ" points="[0, 0, -95, 60]$[95, -60, 0, 0]"/>
-            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yRwF4C62EeSZXImjWpCuBQ" id="(0.5,0.0)"/>
-            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yRwF4S62EeSZXImjWpCuBQ" id="(0.5,1.0)"/>
-          </edges>
           <edges xmi:type="notation:Edge" xmi:id="_yRwF4i62EeSZXImjWpCuBQ" type="4001" element="_yP0zti62EeSZXImjWpCuBQ" source="_yRNTVC62EeSZXImjWpCuBQ" target="_yRMsRC62EeSZXImjWpCuBQ">
             <children xmi:type="notation:Node" xmi:id="_yRws8C62EeSZXImjWpCuBQ" type="6001">
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRws8S62EeSZXImjWpCuBQ" y="-10"/>
@@ -925,21 +892,53 @@
             <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yRyiIC62EeSZXImjWpCuBQ" id="(0.5,0.0)"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yRyiIS62EeSZXImjWpCuBQ" id="(0.5,1.0)"/>
           </edges>
-          <edges xmi:type="notation:Edge" xmi:id="_yRyiIi62EeSZXImjWpCuBQ" type="4001" element="_yP0zwC62EeSZXImjWpCuBQ" source="_yRQ9sC62EeSZXImjWpCuBQ" target="_yRRkwy62EeSZXImjWpCuBQ">
-            <children xmi:type="notation:Node" xmi:id="_yRyiJi62EeSZXImjWpCuBQ" type="6001">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRyiJy62EeSZXImjWpCuBQ" y="-10"/>
+          <edges xmi:type="notation:Edge" xmi:id="_Ltwr4DmcEeSHUtWdMxc0ww" type="4001" element="_Ls2F4DmcEeSHUtWdMxc0ww" source="_LtrMUDmcEeSHUtWdMxc0ww" target="_LttBhDmcEeSHUtWdMxc0ww">
+            <children xmi:type="notation:Node" xmi:id="_LtyhEDmcEeSHUtWdMxc0ww" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LtyhETmcEeSHUtWdMxc0ww" y="-10"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_yRzJMC62EeSZXImjWpCuBQ" type="6002">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRzJMS62EeSZXImjWpCuBQ" y="10"/>
+            <children xmi:type="notation:Node" xmi:id="_LtzvMDmcEeSHUtWdMxc0ww" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LtzvMTmcEeSHUtWdMxc0ww" y="10"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_yRzJMi62EeSZXImjWpCuBQ" type="6003">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yRzJMy62EeSZXImjWpCuBQ" y="10"/>
+            <children xmi:type="notation:Node" xmi:id="_LtzvMjmcEeSHUtWdMxc0ww" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LtzvMzmcEeSHUtWdMxc0ww" y="10"/>
             </children>
-            <styles xmi:type="notation:ConnectorStyle" xmi:id="_yRyiIy62EeSZXImjWpCuBQ"/>
-            <styles xmi:type="notation:FontStyle" xmi:id="_yRyiJC62EeSZXImjWpCuBQ" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yRyiJS62EeSZXImjWpCuBQ" points="[0, 0, 95, 60]$[-95, -60, 0, 0]"/>
-            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yRzJNC62EeSZXImjWpCuBQ" id="(0.5,0.0)"/>
-            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yRzJNS62EeSZXImjWpCuBQ" id="(0.5,1.0)"/>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_Ltwr4TmcEeSHUtWdMxc0ww"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_Ltwr4jmcEeSHUtWdMxc0ww" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ltwr4zmcEeSHUtWdMxc0ww" points="[0, 0, 0, 270]$[0, -270, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lt3ZkDmcEeSHUtWdMxc0ww" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lt3ZkTmcEeSHUtWdMxc0ww" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_Lt4AoDmcEeSHUtWdMxc0ww" type="4001" element="_Ls2s8DmcEeSHUtWdMxc0ww" source="_LtsaczmcEeSHUtWdMxc0ww" target="_LttBhDmcEeSHUtWdMxc0ww">
+            <children xmi:type="notation:Node" xmi:id="_Lt4ApDmcEeSHUtWdMxc0ww" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lt4ApTmcEeSHUtWdMxc0ww" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Lt4ApjmcEeSHUtWdMxc0ww" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lt4nsDmcEeSHUtWdMxc0ww" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Lt4nsTmcEeSHUtWdMxc0ww" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lt4nsjmcEeSHUtWdMxc0ww" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_Lt4AoTmcEeSHUtWdMxc0ww"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_Lt4AojmcEeSHUtWdMxc0ww" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Lt4AozmcEeSHUtWdMxc0ww" points="[0, 0, -95, 60]$[95, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lt4nszmcEeSHUtWdMxc0ww" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lt4ntDmcEeSHUtWdMxc0ww" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_Lt4ntTmcEeSHUtWdMxc0ww" type="4001" element="_Ls5wQDmcEeSHUtWdMxc0ww" source="_LtrMUDmcEeSHUtWdMxc0ww" target="_LtsaczmcEeSHUtWdMxc0ww">
+            <children xmi:type="notation:Node" xmi:id="_Lt5OwDmcEeSHUtWdMxc0ww" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lt5OwTmcEeSHUtWdMxc0ww" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Lt5OwjmcEeSHUtWdMxc0ww" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lt5OwzmcEeSHUtWdMxc0ww" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Lt5OxDmcEeSHUtWdMxc0ww" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lt5OxTmcEeSHUtWdMxc0ww" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_Lt4ntjmcEeSHUtWdMxc0ww"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_Lt4ntzmcEeSHUtWdMxc0ww" fontName=".Helvetica Neue DeskInterface" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Lt4nuDmcEeSHUtWdMxc0ww" points="[0, 0, 95, 60]$[-95, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lt510DmcEeSHUtWdMxc0ww" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Lt510TmcEeSHUtWdMxc0ww" id="(0.5,1.0)"/>
           </edges>
         </data>
       </ownedAnnotationEntries>
@@ -1128,109 +1127,6 @@
           </ownedElements>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_yP0zfy62EeSZXImjWpCuBQ" name="org.my.example">
-        <target xmi:type="types:LTypedPackage" href="src/MyOther.entitymodel#/0/@packages.0"/>
-        <semanticElements xmi:type="types:LTypedPackage" href="src/MyOther.entitymodel#/0/@packages.0"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_yP0zgC62EeSZXImjWpCuBQ">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zgS62EeSZXImjWpCuBQ"/>
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zgi62EeSZXImjWpCuBQ"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zgy62EeSZXImjWpCuBQ" red="255" green="255" blue="255"/>
-          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zhC62EeSZXImjWpCuBQ" red="209" green="209" blue="209"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']"/>
-        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_yP0zhS62EeSZXImjWpCuBQ" name="MyEntity" outgoingEdges="_yP0zrC62EeSZXImjWpCuBQ _yP0zwC62EeSZXImjWpCuBQ" width="10" height="15">
-          <target xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.0"/>
-          <semanticElements xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.0"/>
-          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_yP0zhi62EeSZXImjWpCuBQ" backgroundStyle="GradientTopToBottom">
-            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zhy62EeSZXImjWpCuBQ"/>
-            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@style"/>
-            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0ziC62EeSZXImjWpCuBQ"/>
-            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0ziS62EeSZXImjWpCuBQ" red="255" green="255" blue="255"/>
-            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zii62EeSZXImjWpCuBQ" red="255" green="245" blue="181"/>
-          </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_yP0ziy62EeSZXImjWpCuBQ" name="value : String">
-            <target xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.0/@features.0"/>
-            <semanticElements xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.0/@features.0"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_yP0zjC62EeSZXImjWpCuBQ" labelAlignment="LEFT">
-              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zjS62EeSZXImjWpCuBQ"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']/@style"/>
-              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zji62EeSZXImjWpCuBQ"/>
-              <color xmi:type="viewpoint:RGBValues" xmi:id="_yP0zjy62EeSZXImjWpCuBQ" red="136" green="136" blue="136"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']"/>
-          </ownedElements>
-        </ownedDiagramElements>
-        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_yP0zkC62EeSZXImjWpCuBQ" name="MyChild" outgoingEdges="_yP0zsS62EeSZXImjWpCuBQ" incomingEdges="_yP0zwC62EeSZXImjWpCuBQ" width="10" height="15">
-          <target xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.1"/>
-          <semanticElements xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.1"/>
-          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_yP0zkS62EeSZXImjWpCuBQ" backgroundStyle="GradientTopToBottom">
-            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zki62EeSZXImjWpCuBQ"/>
-            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@style"/>
-            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zky62EeSZXImjWpCuBQ"/>
-            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zlC62EeSZXImjWpCuBQ" red="255" green="255" blue="255"/>
-            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zlS62EeSZXImjWpCuBQ" red="255" green="245" blue="181"/>
-          </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_i7XN4C66EeSL8II7LkxeKQ" name="name : String">
-            <target xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.1/@features.0"/>
-            <semanticElements xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.1/@features.0"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_i7XN4S66EeSL8II7LkxeKQ" labelAlignment="LEFT">
-              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_i7XN4i66EeSL8II7LkxeKQ"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']/@style"/>
-              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_i7XN4y66EeSL8II7LkxeKQ"/>
-              <color xmi:type="viewpoint:RGBValues" xmi:id="_i7XN5C66EeSL8II7LkxeKQ" red="136" green="136" blue="136"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']"/>
-          </ownedElements>
-        </ownedDiagramElements>
-        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_yP0zli62EeSZXImjWpCuBQ" name="MyParent" incomingEdges="_yP0zrC62EeSZXImjWpCuBQ _yP0zsS62EeSZXImjWpCuBQ" width="10" height="15">
-          <target xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.2"/>
-          <semanticElements xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.2"/>
-          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_yP0zly62EeSZXImjWpCuBQ" backgroundStyle="GradientTopToBottom">
-            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zmC62EeSZXImjWpCuBQ"/>
-            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@style"/>
-            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zmS62EeSZXImjWpCuBQ"/>
-            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zmi62EeSZXImjWpCuBQ" red="255" green="255" blue="255"/>
-            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zmy62EeSZXImjWpCuBQ" red="255" green="245" blue="181"/>
-          </ownedStyle>
-          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_yP0znC62EeSZXImjWpCuBQ" name="pid : long">
-            <target xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.2/@features.0"/>
-            <semanticElements xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.2/@features.0"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_yP0znS62EeSZXImjWpCuBQ" labelAlignment="LEFT">
-              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zni62EeSZXImjWpCuBQ"/>
-              <description xmi:type="style:SquareDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']/@style"/>
-              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zny62EeSZXImjWpCuBQ"/>
-              <color xmi:type="viewpoint:RGBValues" xmi:id="_yP0zoC62EeSZXImjWpCuBQ" red="136" green="136" blue="136"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']"/>
-          </ownedElements>
-        </ownedDiagramElements>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_yP0zrC62EeSZXImjWpCuBQ" sourceNode="_yP0zhS62EeSZXImjWpCuBQ" targetNode="_yP0zli62EeSZXImjWpCuBQ">
-        <target xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.0"/>
-        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_yP0zrS62EeSZXImjWpCuBQ" targetArrow="InputClosedArrow" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType']/@style"/>
-          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zri62EeSZXImjWpCuBQ" red="136" green="136" blue="136"/>
-          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_yP0zry62EeSZXImjWpCuBQ" showIcon="false">
-            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zsC62EeSZXImjWpCuBQ"/>
-          </centerLabelStyle>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_yP0zsS62EeSZXImjWpCuBQ" sourceNode="_yP0zkC62EeSZXImjWpCuBQ" targetNode="_yP0zli62EeSZXImjWpCuBQ">
-        <target xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.1"/>
-        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_yP0zsi62EeSZXImjWpCuBQ" targetArrow="InputClosedArrow" size="2">
-          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType']/@style"/>
-          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zsy62EeSZXImjWpCuBQ" red="136" green="136" blue="136"/>
-          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_yP0ztC62EeSZXImjWpCuBQ" showIcon="false">
-            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0ztS62EeSZXImjWpCuBQ"/>
-          </centerLabelStyle>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType']"/>
-      </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_yP0zti62EeSZXImjWpCuBQ" sourceNode="_yP0zbi62EeSZXImjWpCuBQ" targetNode="_yP0zaC62EeSZXImjWpCuBQ">
         <target xmi:type="entity:LBean" href="src/My.entitymodel#/0/@packages.0/@types.3"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_yP0zty62EeSZXImjWpCuBQ" targetArrow="InputClosedArrow" size="2">
@@ -1254,14 +1150,117 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entityReference']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_yP0zwC62EeSZXImjWpCuBQ" name="childs" sourceNode="_yP0zhS62EeSZXImjWpCuBQ" targetNode="_yP0zkC62EeSZXImjWpCuBQ">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_Lsm1UDmcEeSHUtWdMxc0ww" name="org.my.example">
+        <target xmi:type="types:LTypedPackage" href="src/MyOther.entitymodel#/0/@packages.0"/>
+        <semanticElements xmi:type="types:LTypedPackage" href="src/MyOther.entitymodel#/0/@packages.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_LsoDcDmcEeSHUtWdMxc0ww">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LsoDcTmcEeSHUtWdMxc0ww"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LsoDcjmcEeSHUtWdMxc0ww"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_LsoDczmcEeSHUtWdMxc0ww" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_LsoDdDmcEeSHUtWdMxc0ww" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_LspRkDmcEeSHUtWdMxc0ww" name="MyEntity" outgoingEdges="_Ls2F4DmcEeSHUtWdMxc0ww _Ls5wQDmcEeSHUtWdMxc0ww" width="10" height="15">
+          <target xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.0"/>
+          <semanticElements xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.0"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Lsp4oDmcEeSHUtWdMxc0ww" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_Lsp4oTmcEeSHUtWdMxc0ww"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_Lsp4ojmcEeSHUtWdMxc0ww"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_Lsp4ozmcEeSHUtWdMxc0ww" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_Lsp4pDmcEeSHUtWdMxc0ww" red="255" green="245" blue="181"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']"/>
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Lsrt0DmcEeSHUtWdMxc0ww" name="value : String">
+            <target xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.0/@features.0"/>
+            <semanticElements xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.0/@features.0"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_Lsrt0TmcEeSHUtWdMxc0ww" labelAlignment="LEFT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_Lsrt0jmcEeSHUtWdMxc0ww"/>
+              <description xmi:type="style:SquareDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_Lsrt0zmcEeSHUtWdMxc0ww"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_Lsrt1DmcEeSHUtWdMxc0ww" red="136" green="136" blue="136"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']"/>
+          </ownedElements>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_LsqfsDmcEeSHUtWdMxc0ww" name="MyChild" outgoingEdges="_Ls2s8DmcEeSHUtWdMxc0ww" incomingEdges="_Ls5wQDmcEeSHUtWdMxc0ww" width="10" height="15">
+          <target xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.1"/>
+          <semanticElements xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.1"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_LsqfsTmcEeSHUtWdMxc0ww" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LsqfsjmcEeSHUtWdMxc0ww"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LsqfszmcEeSHUtWdMxc0ww"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_LsqftDmcEeSHUtWdMxc0ww" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_LsqftTmcEeSHUtWdMxc0ww" red="255" green="245" blue="181"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']"/>
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_LssU4DmcEeSHUtWdMxc0ww" name="name : String">
+            <target xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.1/@features.0"/>
+            <semanticElements xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.1/@features.0"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_Lss78DmcEeSHUtWdMxc0ww" labelAlignment="LEFT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_Lss78TmcEeSHUtWdMxc0ww"/>
+              <description xmi:type="style:SquareDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_Lss78jmcEeSHUtWdMxc0ww"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_Lss78zmcEeSHUtWdMxc0ww" red="136" green="136" blue="136"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']"/>
+          </ownedElements>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_LsrGwDmcEeSHUtWdMxc0ww" name="MyParent" incomingEdges="_Ls2F4DmcEeSHUtWdMxc0ww _Ls2s8DmcEeSHUtWdMxc0ww" width="10" height="15">
+          <target xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.2"/>
+          <semanticElements xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.2"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_LsrGwTmcEeSHUtWdMxc0ww" backgroundStyle="GradientTopToBottom">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LsrGwjmcEeSHUtWdMxc0ww"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LsrGwzmcEeSHUtWdMxc0ww"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_LsrGxDmcEeSHUtWdMxc0ww" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_LsrGxTmcEeSHUtWdMxc0ww" red="255" green="245" blue="181"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']"/>
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_LstjADmcEeSHUtWdMxc0ww" name="pid : long">
+            <target xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.2/@features.0"/>
+            <semanticElements xmi:type="entity:LEntityAttribute" href="src/MyOther.entitymodel#/0/@packages.0/@types.2/@features.0"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_LstjATmcEeSHUtWdMxc0ww" labelAlignment="LEFT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_LstjAjmcEeSHUtWdMxc0ww"/>
+              <description xmi:type="style:SquareDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_LstjAzmcEeSHUtWdMxc0ww"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_LstjBDmcEeSHUtWdMxc0ww" red="136" green="136" blue="136"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']/@subNodeMappings[name='LEntityAttributeNode']"/>
+          </ownedElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Ls2F4DmcEeSHUtWdMxc0ww" sourceNode="_LspRkDmcEeSHUtWdMxc0ww" targetNode="_LsrGwDmcEeSHUtWdMxc0ww">
+        <target xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Ls2F4TmcEeSHUtWdMxc0ww" targetArrow="InputClosedArrow" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_Ls2F4jmcEeSHUtWdMxc0ww" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Ls2F4zmcEeSHUtWdMxc0ww" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_Ls2F5DmcEeSHUtWdMxc0ww"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Ls2s8DmcEeSHUtWdMxc0ww" sourceNode="_LsqfsDmcEeSHUtWdMxc0ww" targetNode="_LsrGwDmcEeSHUtWdMxc0ww">
+        <target xmi:type="entity:LEntity" href="src/MyOther.entitymodel#/0/@packages.0/@types.1"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Ls2s8TmcEeSHUtWdMxc0ww" targetArrow="InputClosedArrow" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_Ls2s8jmcEeSHUtWdMxc0ww" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Ls2s8zmcEeSHUtWdMxc0ww" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_Ls2s9DmcEeSHUtWdMxc0ww"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Ls5wQDmcEeSHUtWdMxc0ww" name="childs" sourceNode="_LspRkDmcEeSHUtWdMxc0ww" targetNode="_LsqfsDmcEeSHUtWdMxc0ww">
         <target xmi:type="entity:LEntityReference" href="src/MyOther.entitymodel#/0/@packages.0/@types.0/@features.1"/>
         <semanticElements xmi:type="entity:LEntityReference" href="src/MyOther.entitymodel#/0/@packages.0/@types.0/@features.1"/>
-        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_yP0zwS62EeSZXImjWpCuBQ" size="2">
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Ls5wQTmcEeSHUtWdMxc0ww" size="2">
           <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entityReference']/@style"/>
-          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zwi62EeSZXImjWpCuBQ" red="136" green="136" blue="136"/>
-          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_yP0zwy62EeSZXImjWpCuBQ">
-            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yP0zxC62EeSZXImjWpCuBQ"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_Ls5wQjmcEeSHUtWdMxc0ww" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Ls5wQzmcEeSHUtWdMxc0ww">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_Ls5wRDmcEeSHUtWdMxc0ww"/>
           </centerLabelStyle>
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.lunifera.tools.graphical.entity/description/org.lunifera.tools.graphical.entity.odesign#//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entityReference']"/>

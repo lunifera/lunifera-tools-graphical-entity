@@ -15,8 +15,7 @@ package huhu {
 
 	bean Bean1 {
 		id String pid;
-		var Date pdate;
-	}
+		transient Date pdate}
 
 	bean Bean2 extends Bean1 {
 		var Date pdate;
@@ -28,7 +27,7 @@ package huhu {
 		//		ref Bean1 [0 .. 1] myreference;
 	}
 	entity asdf {
-		var Date bdate;
+		transient Date bdate;
 
 		//		ref second [0 .. 1] myreference;
 	}

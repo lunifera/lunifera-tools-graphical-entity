@@ -1,4 +1,4 @@
-package huhu {
+package huhu.dtos {
 	
 	/* Imports the original entity package */
 	import huhu.*;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+   <scr:component name="huhu.dtos.mapper.sdfsdfdtomapper">
+       <implementation class="huhu.dtos.mapper.sdfsdfDtoMapper"/>
+       <property name="dto" value="huhu.dtos.sdfsdfDto"/>
+       <property name="entity" value="huhu.sdfsdf"/>
+       <property name="service.pid" value="huhu.dtos.mapper.sdfsdfdtomapper"/>
+       <reference name="bind" interface="org.lunifera.dsl.dto.common.IMapperAccess" 
+       		cardinality="1..1" policy="static" bind="bindMapperAccess" unbind="unbindMapperAccess"/>
+   </scr:component>
+</components>

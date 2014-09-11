@@ -1,7 +1,6 @@
 package huhu;
 
 import java.util.Date;
-import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -15,7 +14,7 @@ public class asdf {
   @Transient
   private boolean disposed;
   
-  @Column(name = "BDATE")
+  @Transient
   private Date bdate;
   
   /**
