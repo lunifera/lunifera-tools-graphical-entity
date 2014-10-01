@@ -1,11 +1,13 @@
-package org.my.example.mapper;
+package huhu.mapper;
+
+import huhu.Bean3Dto;
 
 /**
- * This class maps the dto {@link MyParentDto} to and from the entity {@link MyParent}.
+ * This class maps the dto {@link Bean3Dto} to and from the entity {@link Bean3}.
  * 
  */
 @SuppressWarnings("all")
-public class MyParentDtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
+public class Bean3DtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
   private org.lunifera.dsl.dto.lib.IMapperAccess mapperAccess;
   
   /**
@@ -40,49 +42,49 @@ public class MyParentDtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
   }
   
   /**
-   * Maps the entity {@link MyParent} to the dto {@link MyParentDto}.
+   * Maps the entity {@link Bean3} to the dto {@link Bean3Dto}.
    * 
    * @param dto - The target dto
    * @param entity - The source entity
    * 
    */
-  public void mapToDTO(final org.my.example.MyParentDto dto, final org.my.example.MyParent entity) {
+  public void mapToDTO(final Bean3Dto dto, final huhu.Bean3 entity) {
     
-    dto.setPid(toDto_pid(entity));
+    dto.setFirstname(toDto_firstname(entity));
   }
   
   /**
-   * Maps the dto {@link MyParentDto} to the entity {@link MyParent}.
+   * Maps the dto {@link Bean3Dto} to the entity {@link Bean3}.
    * 
    * @param dto - The source dto
    * @param entity - The target entity
    * 
    */
-  public void mapToEntity(final org.my.example.MyParentDto dto, final org.my.example.MyParent entity) {
+  public void mapToEntity(final Bean3Dto dto, final huhu.Bean3 entity) {
     
-    entity.setPid(toEntity_pid(dto));
+    entity.setFirstname(toEntity_firstname(dto));
     
   }
   
   /**
-   * Maps the property pid from the given entity to dto property.
+   * Maps the property firstname from the given entity to dto property.
    * 
    * @param in - The source entity
    * @return the mapped value
    * 
    */
-  protected long toDto_pid(final org.my.example.MyParent in) {
-    return in.getPid();
+  protected String toDto_firstname(final huhu.Bean3 in) {
+    return in.getFirstname();
   }
   
   /**
-   * Maps the property pid from the given entity to dto property.
+   * Maps the property firstname from the given entity to dto property.
    * 
    * @param in - The source entity
    * @return the mapped value
    * 
    */
-  protected long toEntity_pid(final org.my.example.MyParentDto in) {
-    return in.getPid();
+  protected String toEntity_firstname(final Bean3Dto in) {
+    return in.getFirstname();
   }
 }

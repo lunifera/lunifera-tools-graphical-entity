@@ -1,14 +1,11 @@
 package org.my.example.mapper;
 
-import org.my.example.MyChildDto;
-import org.my.example.mapper.MyParentDtoMapper;
-
 /**
  * This class maps the dto {@link MyChildDto} to and from the entity {@link MyChild}.
  * 
  */
 @SuppressWarnings("all")
-public class MyChildDtoMapper extends MyParentDtoMapper {
+public class MyChildDtoMapper implements org.my.example.mapper.MyParentDtoMapper {
   /**
    * Maps the entity {@link MyChild} to the dto {@link MyChildDto}.
    * 
@@ -16,7 +13,7 @@ public class MyChildDtoMapper extends MyParentDtoMapper {
    * @param entity - The source entity
    * 
    */
-  public void mapToDTO(final MyChildDto dto, final org.my.example.MyChild entity) {
+  public void mapToDTO(final org.my.example.MyChildDto dto, final org.my.example.MyChild entity) {
     super.mapToDTO(dto, entity);
     
     
@@ -30,7 +27,7 @@ public class MyChildDtoMapper extends MyParentDtoMapper {
    * @param entity - The target entity
    * 
    */
-  public void mapToEntity(final MyChildDto dto, final org.my.example.MyChild entity) {
+  public void mapToEntity(final org.my.example.MyChildDto dto, final org.my.example.MyChild entity) {
     super.mapToEntity(dto, entity);
     
     
@@ -56,7 +53,7 @@ public class MyChildDtoMapper extends MyParentDtoMapper {
    * @return the mapped value
    * 
    */
-  protected String toEntity_name(final MyChildDto in) {
+  protected String toEntity_name(final org.my.example.MyChildDto in) {
     return in.getName();
   }
 }

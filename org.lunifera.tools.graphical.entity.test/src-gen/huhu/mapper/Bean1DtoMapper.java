@@ -1,11 +1,14 @@
-package org.my.example.mapper;
+package huhu.mapper;
+
+import huhu.Bean1Dto;
+import java.util.Date;
 
 /**
- * This class maps the dto {@link MyParentDto} to and from the entity {@link MyParent}.
+ * This class maps the dto {@link Bean1Dto} to and from the entity {@link Bean1}.
  * 
  */
 @SuppressWarnings("all")
-public class MyParentDtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
+public class Bean1DtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
   private org.lunifera.dsl.dto.lib.IMapperAccess mapperAccess;
   
   /**
@@ -40,28 +43,31 @@ public class MyParentDtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
   }
   
   /**
-   * Maps the entity {@link MyParent} to the dto {@link MyParentDto}.
+   * Maps the entity {@link Bean1} to the dto {@link Bean1Dto}.
    * 
    * @param dto - The target dto
    * @param entity - The source entity
    * 
    */
-  public void mapToDTO(final org.my.example.MyParentDto dto, final org.my.example.MyParent entity) {
+  public void mapToDTO(final Bean1Dto dto, final huhu.Bean1 entity) {
     
     dto.setPid(toDto_pid(entity));
+    dto.setPdate(toDto_pdate(entity));
   }
   
   /**
-   * Maps the dto {@link MyParentDto} to the entity {@link MyParent}.
+   * Maps the dto {@link Bean1Dto} to the entity {@link Bean1}.
    * 
    * @param dto - The source dto
    * @param entity - The target entity
    * 
    */
-  public void mapToEntity(final org.my.example.MyParentDto dto, final org.my.example.MyParent entity) {
+  public void mapToEntity(final Bean1Dto dto, final huhu.Bean1 entity) {
     
     entity.setPid(toEntity_pid(dto));
     
+    entity.setPdate(toEntity_pdate(dto));
+    
   }
   
   /**
@@ -71,7 +77,7 @@ public class MyParentDtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
    * @return the mapped value
    * 
    */
-  protected long toDto_pid(final org.my.example.MyParent in) {
+  protected String toDto_pid(final huhu.Bean1 in) {
     return in.getPid();
   }
   
@@ -82,7 +88,29 @@ public class MyParentDtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
    * @return the mapped value
    * 
    */
-  protected long toEntity_pid(final org.my.example.MyParentDto in) {
+  protected String toEntity_pid(final Bean1Dto in) {
     return in.getPid();
+  }
+  
+  /**
+   * Maps the property pdate from the given entity to dto property.
+   * 
+   * @param in - The source entity
+   * @return the mapped value
+   * 
+   */
+  protected Date toDto_pdate(final huhu.Bean1 in) {
+    return in.getPdate();
+  }
+  
+  /**
+   * Maps the property pdate from the given entity to dto property.
+   * 
+   * @param in - The source entity
+   * @return the mapped value
+   * 
+   */
+  protected Date toEntity_pdate(final Bean1Dto in) {
+    return in.getPdate();
   }
 }

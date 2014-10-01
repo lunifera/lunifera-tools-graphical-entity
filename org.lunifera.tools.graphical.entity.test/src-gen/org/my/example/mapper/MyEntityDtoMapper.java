@@ -1,15 +1,11 @@
 package org.my.example.mapper;
 
-import org.my.example.MyChildDto;
-import org.my.example.MyEntityDto;
-import org.my.example.mapper.MyParentDtoMapper;
-
 /**
  * This class maps the dto {@link MyEntityDto} to and from the entity {@link MyEntity}.
  * 
  */
 @SuppressWarnings("all")
-public class MyEntityDtoMapper extends MyParentDtoMapper {
+public class MyEntityDtoMapper implements org.my.example.mapper.MyParentDtoMapper {
   /**
    * Maps the entity {@link MyEntity} to the dto {@link MyEntityDto}.
    * 
@@ -17,7 +13,7 @@ public class MyEntityDtoMapper extends MyParentDtoMapper {
    * @param entity - The source entity
    * 
    */
-  public void mapToDTO(final MyEntityDto dto, final org.my.example.MyEntity entity) {
+  public void mapToDTO(final org.my.example.MyEntityDto dto, final org.my.example.MyEntity entity) {
     super.mapToDTO(dto, entity);
     
     
@@ -32,7 +28,7 @@ public class MyEntityDtoMapper extends MyParentDtoMapper {
    * @param entity - The target entity
    * 
    */
-  public void mapToEntity(final MyEntityDto dto, final org.my.example.MyEntity entity) {
+  public void mapToEntity(final org.my.example.MyEntityDto dto, final org.my.example.MyEntity entity) {
     super.mapToEntity(dto, entity);
     
     
@@ -60,7 +56,7 @@ public class MyEntityDtoMapper extends MyParentDtoMapper {
    * @return the mapped value
    * 
    */
-  protected String toEntity_value(final MyEntityDto in) {
+  protected String toEntity_value(final org.my.example.MyEntityDto in) {
     return in.getValue();
   }
   
@@ -71,7 +67,7 @@ public class MyEntityDtoMapper extends MyParentDtoMapper {
    * @return the mapped dto
    * 
    */
-  protected MyChildDto toDto_childs(final org.my.example.MyEntity in) {
+  protected org.my.example.MyChildDto toDto_childs(final org.my.example.MyEntity in) {
     org.lunifera.dsl.dto.lib.IMapper<MyChildDto, MyChild> mapper = getMapper(MyChildDto.class, MyChild.class);
     if(mapper != null) {
     	throw new IllegalStateException("Mapper must not be null!");
@@ -90,7 +86,7 @@ public class MyEntityDtoMapper extends MyParentDtoMapper {
    * @return the mapped entity
    * 
    */
-  protected org.my.example.MyChild toEntity_childs(final MyEntityDto in) {
+  protected org.my.example.MyChild toEntity_childs(final org.my.example.MyEntityDto in) {
     org.lunifera.dsl.dto.lib.IMapper<MyChildDto, MyChild> mapper = getMapper(MyChildDto.class, MyChild.class);
     if(mapper != null) {
     	throw new IllegalStateException("Mapper must not be null!");

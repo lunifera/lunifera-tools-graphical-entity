@@ -1,11 +1,14 @@
-package org.my.example.mapper;
+package huhu.mapper;
+
+import huhu.asdfDto;
+import java.util.Date;
 
 /**
- * This class maps the dto {@link MyParentDto} to and from the entity {@link MyParent}.
+ * This class maps the dto {@link asdfDto} to and from the entity {@link asdf}.
  * 
  */
 @SuppressWarnings("all")
-public class MyParentDtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
+public class asdfDtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
   private org.lunifera.dsl.dto.lib.IMapperAccess mapperAccess;
   
   /**
@@ -40,49 +43,49 @@ public class MyParentDtoMapper implements org.lunifera.dsl.dto.lib.IMapper {
   }
   
   /**
-   * Maps the entity {@link MyParent} to the dto {@link MyParentDto}.
+   * Maps the entity {@link asdf} to the dto {@link asdfDto}.
    * 
    * @param dto - The target dto
    * @param entity - The source entity
    * 
    */
-  public void mapToDTO(final org.my.example.MyParentDto dto, final org.my.example.MyParent entity) {
+  public void mapToDTO(final asdfDto dto, final huhu.asdf entity) {
     
-    dto.setPid(toDto_pid(entity));
+    dto.setBdate(toDto_bdate(entity));
   }
   
   /**
-   * Maps the dto {@link MyParentDto} to the entity {@link MyParent}.
+   * Maps the dto {@link asdfDto} to the entity {@link asdf}.
    * 
    * @param dto - The source dto
    * @param entity - The target entity
    * 
    */
-  public void mapToEntity(final org.my.example.MyParentDto dto, final org.my.example.MyParent entity) {
+  public void mapToEntity(final asdfDto dto, final huhu.asdf entity) {
     
-    entity.setPid(toEntity_pid(dto));
+    entity.setBdate(toEntity_bdate(dto));
     
   }
   
   /**
-   * Maps the property pid from the given entity to dto property.
+   * Maps the property bdate from the given entity to dto property.
    * 
    * @param in - The source entity
    * @return the mapped value
    * 
    */
-  protected long toDto_pid(final org.my.example.MyParent in) {
-    return in.getPid();
+  protected Date toDto_bdate(final huhu.asdf in) {
+    return in.getBdate();
   }
   
   /**
-   * Maps the property pid from the given entity to dto property.
+   * Maps the property bdate from the given entity to dto property.
    * 
    * @param in - The source entity
    * @return the mapped value
    * 
    */
-  protected long toEntity_pid(final org.my.example.MyParentDto in) {
-    return in.getPid();
+  protected Date toEntity_bdate(final asdfDto in) {
+    return in.getBdate();
   }
 }

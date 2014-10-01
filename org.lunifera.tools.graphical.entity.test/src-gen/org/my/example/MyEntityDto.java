@@ -1,14 +1,12 @@
 package org.my.example;
 
 import java.io.Serializable;
-import org.my.example.MyChildDto;
-import org.my.example.MyParentDto;
 
 @SuppressWarnings("all")
-public class MyEntityDto extends MyParentDto implements Serializable {
+public class MyEntityDto implements org.my.example.MyParentDto, Serializable {
   private String value;
   
-  private MyChildDto childs;
+  private org.my.example.MyChildDto childs;
   
   /**
    * Checks whether the object is disposed.
@@ -56,7 +54,7 @@ public class MyEntityDto extends MyParentDto implements Serializable {
   /**
    * Returns the childs property or <code>null</code> if not present.
    */
-  public MyChildDto getChilds() {
+  public org.my.example.MyChildDto getChilds() {
     checkDisposed();
     return this.childs;
   }
@@ -68,7 +66,7 @@ public class MyEntityDto extends MyParentDto implements Serializable {
    * @throws RuntimeException if instance is <code>disposed</code>
    * 
    */
-  public void setChilds(final MyChildDto childs) {
+  public void setChilds(final org.my.example.MyChildDto childs) {
     checkDisposed();
     firePropertyChange("childs", this.childs, this.childs = childs);
   }
