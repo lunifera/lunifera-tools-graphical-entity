@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.lunifera.tools.graphical.entity</groupId>
 		<artifactId>org.lunifera.tools.graphical.entity</artifactId>
-		<version>0.7.3-SNAPSHOT</version>
+		<version>0.7.4</version>
 	</parent>
 
 	<artifactId>org.lunifera.tools.graphical.entity.test</artifactId>
