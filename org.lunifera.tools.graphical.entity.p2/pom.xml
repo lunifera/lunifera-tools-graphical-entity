@@ -21,7 +21,7 @@
 	<packaging>eclipse-repository</packaging>
 
 	<properties>
-		<lunifera.deployment.p2.label>dependencies</lunifera.deployment.p2.label>
+		<lunifera.deployment.p2.label>tools-graphical-entity</lunifera.deployment.p2.label>
 	</properties>
 
 	<profiles>
