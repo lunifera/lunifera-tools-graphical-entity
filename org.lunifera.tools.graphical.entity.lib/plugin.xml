@@ -7,4 +7,10 @@
 	       name="EntityODesign">
     </component>
   </extension>
+  <extension
+        point="org.eclipse.sirius.viewpointSpecificationModel">
+     <definition
+           path="description/org.lunifera.tools.graphical.entity.odesign">
+     </definition>
+  </extension>
 </plugin>

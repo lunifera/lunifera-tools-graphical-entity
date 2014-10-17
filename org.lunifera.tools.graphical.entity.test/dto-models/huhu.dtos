@@ -1,13 +1,12 @@
-package huhu {
+package huhu.dtos {
 	
 	/* Imports the original entity package */
 	import huhu.*;
 	
 	import org.lunifera.dsl.common.datatypes.my.*;
-	import org.lunifera.dsl.common.datatypes.my.*;
 
 
-	dto sdfsdfDto wraps sdfsdf {
+	dto sdfsdfDto extends asdfDto wraps sdfsdf {
 		inherit var pid;
 		inherit var pdate;
 	}
@@ -24,6 +23,7 @@ package huhu {
 	dto Bean1Dto wraps Bean1 {
 		inherit var pid;
 		inherit var pdate;
+		inherit ref myreference;
 	}
 	
 	dto Bean2Dto extends Bean1Dto wraps Bean2 {

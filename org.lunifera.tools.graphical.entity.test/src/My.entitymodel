@@ -1,8 +1,9 @@
 package huhu {
 
 	import org.lunifera.dsl.common.datatypes.my.*;
-	import org.lunifera.dsl.common.datatypes.my.*;
-	entity sdfsdf {
+	
+	
+	entity sdfsdf extends asdf {
 		id String pid;
 		var Date pdate;
 	}
@@ -15,7 +16,9 @@ package huhu {
 
 	bean Bean1 {
 		id String pid;
-		transient Date pdate}
+		transient Date pdate
+		ref Bean3 [0 .. 1] myreference;
+	}
 
 	bean Bean2 extends Bean1 {
 		var Date pdate;
