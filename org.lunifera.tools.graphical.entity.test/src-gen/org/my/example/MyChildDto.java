@@ -1,12 +1,11 @@
-package huhu.dtos;
+package org.my.example;
 
-import huhu.dtos.Bean1Dto;
 import java.io.Serializable;
-import java.util.Date;
+import org.my.example.MyParentDto;
 
 @SuppressWarnings("all")
-public class Bean2Dto extends Bean1Dto implements Serializable {
-  private Date pdate;
+public class MyChildDto extends MyParentDto implements Serializable {
+  private String name;
   
   /**
    * Checks whether the object is disposed.
@@ -33,21 +32,21 @@ public class Bean2Dto extends Bean1Dto implements Serializable {
   }
   
   /**
-   * Returns the pdate property or <code>null</code> if not present.
+   * Returns the name property or <code>null</code> if not present.
    */
-  public Date getPdate() {
+  public String getName() {
     checkDisposed();
-    return this.pdate;
+    return this.name;
   }
   
   /**
-   * Sets the <code>pdate</code> property to this instance.
+   * Sets the <code>name</code> property to this instance.
    * 
-   * @param pdate - the property
+   * @param name - the property
    * @throws RuntimeException if instance is <code>disposed</code>
    * 
    */
-  public void setPdate(final Date pdate) {
-    firePropertyChange("pdate", this.pdate, this.pdate = pdate );
+  public void setName(final String name) {
+    firePropertyChange("name", this.name, this.name = name );
   }
 }

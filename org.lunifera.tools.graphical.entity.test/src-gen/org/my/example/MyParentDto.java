@@ -1,19 +1,16 @@
-package huhu.dtos;
+package org.my.example;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.io.Serializable;
-import java.util.Date;
 
 @SuppressWarnings("all")
-public class sdfsdfDto implements Serializable {
+public class MyParentDto implements Serializable {
   private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
   
   private boolean disposed;
   
-  private String pid;
-  
-  private Date pdate;
+  private long pid;
   
   /**
    * Returns true, if the object is disposed. 
@@ -86,7 +83,7 @@ public class sdfsdfDto implements Serializable {
   /**
    * Returns the pid property or <code>null</code> if not present.
    */
-  public String getPid() {
+  public long getPid() {
     checkDisposed();
     return this.pid;
   }
@@ -98,26 +95,7 @@ public class sdfsdfDto implements Serializable {
    * @throws RuntimeException if instance is <code>disposed</code>
    * 
    */
-  public void setPid(final String pid) {
+  public void setPid(final long pid) {
     firePropertyChange("pid", this.pid, this.pid = pid );
-  }
-  
-  /**
-   * Returns the pdate property or <code>null</code> if not present.
-   */
-  public Date getPdate() {
-    checkDisposed();
-    return this.pdate;
-  }
-  
-  /**
-   * Sets the <code>pdate</code> property to this instance.
-   * 
-   * @param pdate - the property
-   * @throws RuntimeException if instance is <code>disposed</code>
-   * 
-   */
-  public void setPdate(final Date pdate) {
-    firePropertyChange("pdate", this.pdate, this.pdate = pdate );
   }
 }
