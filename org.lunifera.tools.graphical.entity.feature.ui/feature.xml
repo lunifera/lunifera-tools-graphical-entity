@@ -18,7 +18,7 @@
    </license>
 
    <requires>
-      <import feature="org.lunifera.ide.feature.headless" version="0.7.3.qualifier"/>
+      <import feature="org.lunifera.ide.feature.headless" version="0.7.5.qualifier"/>
    </requires>
 
    <plugin
