@@ -3,7 +3,7 @@
   <ownedViewpoints name="Entities" modelFileExtension="entitymodel">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Entities.diagram" domainClass="LEntityModel" enablePopupBars="true">
       <filters xsi:type="filter:CompositeFilterDescription" name="hideImports">
-        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']" viewConditionExpression="[self.target.eResource().toString().contains('entitymodel')/]"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']" viewConditionExpression="[thisEObject.eResource().toString().contains('entitymodel')._not()/]"/>
       </filters>
       <defaultLayer name="Default">
         <edgeMappings name="entitySuperType" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetFinderExpression="feature:superType">
@@ -25,9 +25,12 @@
         <edgeMappings name="entityReference" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getEntity()/]" domainClass="LEntityReference" useDomainElement="true">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelExpression="[thisEObject.name/]">
+            <centerLabelStyleDescription showIcon="false" labelExpression="[thisEObject.name/]">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
+            <endLabelStyleDescription showIcon="false" labelExpression="[thisEObject.multiplicity.toMultiplicityString/]">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </endLabelStyleDescription>
           </style>
         </edgeMappings>
         <edgeMappings name="beanReference" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']" targetFinderExpression="[thisEObject.type/]" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="LBeanReference" useDomainElement="true">
@@ -38,8 +41,8 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="LTypedPackage" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" domainClass="types.LTypedPackage" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LEntityBeanDragNDrop']">
-          <subContainerMappings name="LEntityContainer" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" semanticCandidatesExpression="feature:types" domainClass="entity.LEntity" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LAttributeDragNDrop']" childrenPresentation="List">
+        <containerMappings name="LTypedPackage" pasteDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='pasteEntityOrBean']" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" domainClass="types.LTypedPackage" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LEntityBeanDragNDrop']">
+          <subContainerMappings name="LEntityContainer" pasteDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='pasteEntityAttribute']" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" semanticCandidatesExpression="feature:types" domainClass="entity.LEntity" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LAttributeDragNDrop']" childrenPresentation="List">
             <subNodeMappings name="LEntityAttributeNode" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" semanticCandidatesExpression="feature:features" domainClass="entity.LEntityAttribute">
               <style xsi:type="style:SquareDescription" labelExpression="feature:typedName" labelAlignment="LEFT" sizeComputationExpression="0" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -54,7 +57,7 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
             </style>
           </subContainerMappings>
-          <subContainerMappings name="LBeanContainer" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" semanticCandidatesExpression="feature:types" domainClass="entity.LBean" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LAttributeDragNDrop']" childrenPresentation="List">
+          <subContainerMappings name="LBeanContainer" pasteDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='pasteBeanAttribute']" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" semanticCandidatesExpression="feature:types" domainClass="entity.LBean" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LAttributeDragNDrop']" childrenPresentation="List">
             <subNodeMappings name="LBeanAttributeNode" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editObjectName']" semanticCandidatesExpression="feature:features" domainClass="entity.LBeanAttribute">
               <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.typedName/]" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -131,6 +134,39 @@
                     <subModelOperations xsi:type="tool_1:Unset" featureName="types" elementExpression="var:element"/>
                   </subModelOperations>
                 </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:PasteDescription" name="pasteEntityAttribute" forceRefresh="true">
+            <container name="container"/>
+            <containerView name="containerView"/>
+            <copiedView name="copiedView"/>
+            <copiedElement name="copiedElement"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="features" valueExpression="var:copiedElement"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:PasteDescription" name="pasteBeanAttribute" forceRefresh="true">
+            <container name="container"/>
+            <containerView name="containerView"/>
+            <copiedView name="copiedView"/>
+            <copiedElement name="copiedElement"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="features" valueExpression="var:copiedElement"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:PasteDescription" name="pasteEntityOrBean" forceRefresh="true">
+            <container name="container"/>
+            <containerView name="containerView"/>
+            <copiedView name="copiedView"/>
+            <copiedElement name="copiedElement"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="types" valueExpression="var:copiedElement"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
