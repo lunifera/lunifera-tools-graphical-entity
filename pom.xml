@@ -15,13 +15,13 @@
 
 	<groupId>org.lunifera.tools.graphical.entity</groupId>
 	<artifactId>org.lunifera.tools.graphical.entity</artifactId>
-	<version>0.7.5-SNAPSHOT</version>
+	<version>0.8.0</version>
 	<packaging>pom</packaging>
 
 	<parent>
 		<groupId>org.lunifera.releng.maven</groupId>
 		<artifactId>lunifera-releng-maven-parent-tycho</artifactId>
-		<version>0.10.1-SNAPSHOT</version>
+		<version>0.12.3-SNAPSHOT</version>
 	</parent>
 
 	<url>${lunifera.site.repository.url}</url>

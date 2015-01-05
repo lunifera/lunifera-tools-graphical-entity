@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.lunifera.tools.graphical.entity.feature.ui_0.7.5.qualifier.jar" id="org.lunifera.tools.graphical.entity.feature.ui" version="0.7.5.qualifier">
+   <feature url="features/org.lunifera.tools.graphical.entity.feature.ui_0.8.0.jar" id="org.lunifera.tools.graphical.entity.feature.ui" version="0.8.0">
       <category name="lunifera_graphical_entity"/>
    </feature>
    <category-def name="lunifera_graphical_entity" label="Lunifera Graphical Entity Designer"/>
