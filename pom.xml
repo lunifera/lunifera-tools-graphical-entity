@@ -15,7 +15,7 @@
 
 	<groupId>org.lunifera.tools.graphical.entity</groupId>
 	<artifactId>org.lunifera.tools.graphical.entity</artifactId>
-	<version>0.8.0</version>
+	<version>0.8.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<parent>
