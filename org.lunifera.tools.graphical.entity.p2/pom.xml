@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.lunifera.releng.maven</groupId>
 		<artifactId>lunifera-releng-maven-parent-tycho</artifactId>
-		<version>0.12.3-SNAPSHOT</version>
+		<version>0.12.5-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>org.lunifera.tools.graphical.entity.p2</artifactId>
@@ -92,5 +92,5 @@
 
 
 	<groupId>org.lunifera.tools.graphical.entity</groupId>
-	<version>0.8.1-SNAPSHOT</version>
+	<version>0.9.0</version>
 </project>
