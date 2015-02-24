@@ -2,4 +2,4 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Entity
 Bundle-SymbolicName: org.lunifera.tools.graphical.entity.test
-Bundle-Version: 0.9.0
+Bundle-Version: 0.9.1.qualifier
