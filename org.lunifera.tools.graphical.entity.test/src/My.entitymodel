@@ -5,6 +5,7 @@ package huhu {
 	entity sdfsdf extends asdf {
 		id String pid;
 		var Date pdate;
+	ref second [0 .. 1] myreference;
 	}
 
 	entity second {
@@ -21,6 +22,7 @@ package huhu {
 
 	bean Bean2 extends Bean1 {
 		var Date pdate;
+	ref Bean3 [0 .. 1] myreference;
 	}
 
 	bean Bean3 {

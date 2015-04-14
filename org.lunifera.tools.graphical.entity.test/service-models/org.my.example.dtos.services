@@ -1,0 +1,13 @@
+package org.my.example.dtos.services {
+	
+	/* Imports the original entity and dto package */
+	import org.my.example.dtos.*;
+	import org.my.example.dtos.dtos.*; 
+	
+	dtoservice MyEntityService provides MyEntityDto {
+	}
+	dtoservice MyChildService provides MyChildDto {
+	}
+	dtoservice MyParentService provides MyParentDto {
+	}
+}
