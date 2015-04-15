@@ -10,5 +10,4 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius.common.acceleo.mtl
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: lib/com.springsource.javax.xml.bind-2.2.0.jar,
- .
+
