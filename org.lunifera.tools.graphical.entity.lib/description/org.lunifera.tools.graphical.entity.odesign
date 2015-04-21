@@ -6,7 +6,7 @@
         <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']" viewConditionExpression="[thisEObject.eResource().toString().contains('entitymodel')._not()/]"/>
       </filters>
       <defaultLayer name="Default">
-        <edgeMappings name="entitySuperType" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetFinderExpression="feature:superType">
+        <edgeMappings name="entitySuperType" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LEntityInheritanceDeletion']" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LEntityContainer']" targetFinderExpression="feature:superType">
           <style targetArrow="InputClosedArrow" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription showIcon="false">
@@ -14,7 +14,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="beanSuperType" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']" targetFinderExpression="feature:superType">
+        <edgeMappings name="beanSuperType" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='LBeanInheritanceDeletion']" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@containerMappings[name='LTypedPackage']/@subContainerMappings[name='LBeanContainer']" targetFinderExpression="feature:superType">
           <style targetArrow="InputClosedArrow" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -42,8 +42,8 @@
           </style>
         </edgeMappings>
         <containerMappings name="LTypedPackage" pasteDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='pasteEntity']" domainClass="types.LTypedPackage" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LEntityBeanDragNDrop'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='LEntityBeanDragNDrop']">
-          <subContainerMappings name="LEntityContainer" pasteDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='pasteEntityAttribute']" semanticCandidatesExpression="feature:types" domainClass="entity.LEntity" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LAttributeDragNDrop']" childrenPresentation="List">
-            <subNodeMappings name="LEntityAttributeNode" semanticCandidatesExpression="feature:features" domainClass="entity.LEntityAttribute">
+          <subContainerMappings name="LEntityContainer" pasteDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='pasteEntityAttribute']" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LEntityDeletion']" semanticCandidatesExpression="feature:types" domainClass="entity.LEntity" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LAttributeDragNDrop']" childrenPresentation="List">
+            <subNodeMappings name="LEntityAttributeNode" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='LEntityAttributeDeletion']" semanticCandidatesExpression="feature:features" domainClass="entity.LEntityAttribute">
               <style xsi:type="style:SquareDescription" labelExpression="feature:typedName" labelAlignment="LEFT" sizeComputationExpression="0" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -57,8 +57,8 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
             </style>
           </subContainerMappings>
-          <subContainerMappings name="LBeanContainer" pasteDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='pasteBeanAttribute']" semanticCandidatesExpression="feature:types" domainClass="entity.LBean" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='LAttributeDragNDrop']" childrenPresentation="List">
-            <subNodeMappings name="LBeanAttributeNode" semanticCandidatesExpression="feature:features" domainClass="entity.LBeanAttribute">
+          <subContainerMappings name="LBeanContainer" pasteDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='pasteBeanAttribute']" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='LBeanDeletion']" semanticCandidatesExpression="feature:types" domainClass="entity.LBean" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='LAttributeDragNDrop']" childrenPresentation="List">
+            <subNodeMappings name="LBeanAttributeNode" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='LBeanAttributeDeletion']" semanticCandidatesExpression="feature:features" domainClass="entity.LBeanAttribute">
               <style xsi:type="style:SquareDescription" labelExpression="[thisEObject.typedName/]" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -155,7 +155,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setInheritance" label="set Inheritance" edgeMappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setInheritance" label="set Inheritance" edgeMappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -163,6 +163,7 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="superType" valueExpression="var:target"/>
+                <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="LEntityInheritancePackageImport" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityInheritancePackageImport"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -186,6 +187,7 @@
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
+                <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="LEntityAttributePackageImportToOne" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityReferencePackageImportToOne"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -226,8 +228,33 @@
                 </subModelOperations>
                 <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:oppositeRef">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="opposite" valueExpression="var:entityReference"/>
+                  <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="LEntityReferencePackageImportToMany" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityReferencePackageImportToMany"/>
                 </subModelOperations>
               </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="LEntityInheritanceDeletion">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="LEntityInheritanceDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityInheritanceDeletion"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="LEntityAttributeDeletion">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="LEntityAttributeDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityAttributeDeletion"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="LEntityDeletion">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="LEntityDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityDeletion"/>
             </initialOperation>
           </ownedTools>
         </toolSections>
@@ -306,7 +333,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setInheritance" edgeMappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='entitySuperType'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setInheritance" edgeMappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entities.diagram']/@defaultLayer/@edgeMappings[name='beanSuperType']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -314,6 +341,7 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="superType" valueExpression="var:target"/>
+                <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="LBeanInheritancePackageeImport" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanInheritancePackageImport"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -337,6 +365,7 @@
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
+                <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="LBeanAttributePackageImportToOne" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanReferencePackageImportToOne"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -377,9 +406,34 @@
                   </subModelOperations>
                 </subModelOperations>
                 <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:oppositeRef">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="opposite" valueExpression="beanReference"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="opposite" valueExpression="var:beanReference"/>
+                  <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="LBeanReferencePackageImportToMany" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanReferencePackageImportToMany"/>
                 </subModelOperations>
               </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="LBeanInheritanceDeletion">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="LBeanInheritanceDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanInheritanceDeletion"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="LBeanAttributeDeletion">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="LBeanAttributeDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanAttributeDeletion"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="LBeanDeletion">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="LBeanDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanDeletion"/>
             </initialOperation>
           </ownedTools>
         </toolSections>

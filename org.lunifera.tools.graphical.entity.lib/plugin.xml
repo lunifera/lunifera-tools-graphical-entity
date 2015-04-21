@@ -13,4 +13,55 @@
            path="description/org.lunifera.tools.graphical.entity.odesign">
      </definition>
   </extension>
+  <extension
+        point="org.eclipse.sirius.externalJavaAction">
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LEntityReferencePackageImportToOne"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityReferencePackageImportToOne">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LBeanReferencePackageImportToOne"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanReferencePackageImportToOne">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LEntityReferencePackageImportToMany"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityReferencePackageImportToMany">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LBeanReferencePackageImportToMany"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanReferencePackageImportToMany">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LEntityInheritancePackageImport"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityInheritancePackageImport">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LBeanInheritancePackageImport"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanInheritancePackageImport">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LEntityInheritanceDeletion"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityInheritanceDeletion">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LBeanInheritanceDeletion"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanInheritanceDeletion">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LEntityAttributeDeletion"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityAttributeDeletion">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LBeanAttributeDeletion"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanAttributeDeletion">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LEntityDeletion"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityDeletion">
+     </javaActions>
+     <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LBeanDeletion"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanDeletion">
+     </javaActions>
+  </extension>
 </plugin>
