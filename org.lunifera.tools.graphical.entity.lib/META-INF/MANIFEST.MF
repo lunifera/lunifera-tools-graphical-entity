@@ -9,6 +9,11 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius,
  org.eclipse.sirius.common.acceleo.mtl,
  org.lunifera.dsl.semantic.entity,
- org.lunifera.dsl.semantic.common
+ org.lunifera.dsl.semantic.common,
+ org.eclipse.core.resources;bundle-version="3.9.1",
+ org.eclipse.sirius.common;bundle-version="1.0.1",
+ org.eclipse.emf.edit;bundle-version="2.10.1",
+ org.eclipse.sirius.ext.emf.edit;bundle-version="1.0.1",
+ org.eclipse.emf.transaction;bundle-version="1.8.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

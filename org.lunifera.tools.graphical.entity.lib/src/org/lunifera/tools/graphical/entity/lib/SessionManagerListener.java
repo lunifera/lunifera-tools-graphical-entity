@@ -16,6 +16,8 @@ public class SessionManagerListener implements
 		URI from = URI.createURI(DATATYPE_RESOURCE);
 		URI to = URI.createURI(DATATYPE_PLUGIN);
 		
+		newSession.getTransactionalEditingDomain().addResourceSetListener(new TransactionListener());
+		
 //		MapUriCommand muCommand = new MapUriCommand(newSession,from, to, null, null );
 //		newSession.getTransactionalEditingDomain().getCommandStack()
 //		.execute(muCommand);
@@ -44,7 +46,8 @@ public class SessionManagerListener implements
 
 	@Override
 	public void notify(Session updated, int notification) {
-
+		
+		int i;
 	}
 
 }

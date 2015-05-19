@@ -64,4 +64,17 @@
            id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanDeletion">
      </javaActions>
   </extension>
+  <extension
+        point="org.eclipse.sirius.sessionManagerListener">
+     <listener
+           class="org.lunifera.tools.graphical.entity.lib.SessionManagerListener">
+     </listener>
+  </extension>
+  <extension
+        point="org.eclipse.emf.transaction.listeners">
+     <listener
+           class="org.lunifera.tools.graphical.entity.lib.TransactionListener">
+        <editingDomain>
+        </editingDomain></listener>
+  </extension>
 </plugin>
