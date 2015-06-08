@@ -26,7 +26,7 @@ import org.osgi.framework.BundleContext;
  */
 public class Activator extends AbstractUIPlugin {
 	// The plug-in ID
-	public static final String PLUGIN_ID = "org.lunifera.tools.graphical.entity.viewmodel";
+	public static final String PLUGIN_ID = "org.lunifera.tools.graphical.entity.lib";
 
 	// The shared instance
 	private static Activator plugin;

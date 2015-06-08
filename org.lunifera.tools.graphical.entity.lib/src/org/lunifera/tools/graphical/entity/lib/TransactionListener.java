@@ -68,6 +68,10 @@ public class TransactionListener implements ResourceSetListener {
 	private boolean containsImport(LTypedPackage lPkg, LScalarType type) {
 		LTypedPackage typePkg = findPackage(type);
 
+		if(typePkg == null){
+			return true;
+		}
+		
 		if (lPkg.getName().equals(typePkg.getName())) {
 			return true;
 		}

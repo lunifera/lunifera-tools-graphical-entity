@@ -39,7 +39,7 @@
            actionClass="org.lunifera.tools.graphical.entity.lib.LBeanInheritancePackageImport"
            id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanInheritancePackageImport">
      </javaActions>
-         <javaActions
+     <javaActions
            actionClass="org.lunifera.tools.graphical.entity.lib.LEntityInheritanceDeletion"
            id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityInheritanceDeletion">
      </javaActions>
@@ -69,5 +69,12 @@
      <listener
            class="org.lunifera.tools.graphical.entity.lib.SessionManagerListener">
      </listener>
+  </extension>
+  <extension
+        point="org.eclipse.emf.transaction.listeners">
+     <listener
+           class="org.lunifera.tools.graphical.entity.lib.TransactionListener">
+        <editingDomain>
+        </editingDomain></listener>
   </extension>
 </plugin>
