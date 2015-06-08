@@ -119,10 +119,8 @@
             </style>
           </conditionnalStyles>
         </containerMappings>
-        <containerMappings name="LEnumContainer" createElements="false" domainClass="types.LEnum" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.4/@ownedTools[name='LEnumLiteralDrop']" childrenPresentation="List">
-          <labelDirectEdit href="../../org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@toolSections.5/@ownedTools[name='Edit%20Name%20with%20CamelCase']"/>
-          <subNodeMappings name="LEnumLiteral" semanticCandidatesExpression="feature:literals" domainClass="types.LEnumLiteral">
-            <labelDirectEdit href="../../org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@toolSections.5/@ownedTools[name='Edit%20Name%20no%20CamelCase']"/>
+        <containerMappings name="LEnumContainer" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20Name%20with%20CamelCase']" createElements="false" domainClass="types.LEnum" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.4/@ownedTools[name='LEnumLiteralDrop']" childrenPresentation="List">
+          <subNodeMappings name="LEnumLiteral" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20Name%20with%20CamelCase']" semanticCandidatesExpression="feature:literals" domainClass="types.LEnumLiteral">
             <style xsi:type="style:BundledImageDescription" labelAlignment="LEFT" tooltipExpression="service:renderTooltip" sizeComputationExpression="1">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
