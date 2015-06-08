@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EStructuralFeature.Setting;
 import org.eclipse.emf.ecore.util.ECrossReferenceAdapter;
 import org.eclipse.sirius.business.api.session.Session;
 import org.eclipse.sirius.business.api.session.SessionManager;
+import org.lunifera.dsl.semantic.common.types.LEnum;
 import org.lunifera.dsl.semantic.common.types.LTypedPackage;
 import org.lunifera.dsl.semantic.entity.LBean;
 import org.lunifera.dsl.semantic.entity.LBeanAttribute;
@@ -69,16 +70,16 @@ public class RelatedElementsSwitch extends LunEntitySwitch<List<EObject>> {
 	@Override
 	public List<EObject> caseLEntity(LEntity object) {
 		relateds.add(object.getSuperType());
-		
+
 		for (LEntityReference ref : object.getReferences()) {
 			if (ref.getType() != null) {
-				relateds.add(ref.getType());
+				caseLEntityReference(ref);
 			}
 		}
-		
+
 		for (LEntityAttribute ref : object.getAttributes()) {
 			if (ref.getType() instanceof LBean) {
-				relateds.add(ref.getType());
+				caseLEntityAttribute(ref);
 			}
 		}
 
@@ -87,16 +88,14 @@ public class RelatedElementsSwitch extends LunEntitySwitch<List<EObject>> {
 
 	@Override
 	public List<EObject> caseLBean(LBean object) {
-		for (LBeanReference eRef : object.getReferences()) {
-			if (eRef.getType() != null) {
-				relateds.add(eRef.getType());
+		for (LBeanReference ref : object.getReferences()) {
+			if (ref.getType() != null) {
+				caseLBeanReference(ref);
 			}
 		}
-		
+
 		for (LBeanAttribute ref : object.getAttributes()) {
-			if (ref.getType() instanceof LBean) {
-				relateds.add(ref.getType());
-			}
+			caseLBeanAttribute(ref);
 		}
 
 		return super.caseLBean(object);
@@ -116,7 +115,8 @@ public class RelatedElementsSwitch extends LunEntitySwitch<List<EObject>> {
 
 	@Override
 	public List<EObject> caseLBeanAttribute(LBeanAttribute object) {
-		if (object.getType() instanceof LBean) {
+		if (object.getType() instanceof LBean
+				|| object.getType() instanceof LEnum) {
 			relateds.add(object.getType());
 		}
 		return super.caseLBeanAttribute(object);
@@ -124,7 +124,8 @@ public class RelatedElementsSwitch extends LunEntitySwitch<List<EObject>> {
 
 	@Override
 	public List<EObject> caseLEntityAttribute(LEntityAttribute object) {
-		if (object.getType() instanceof LBean) {
+		if (object.getType() instanceof LBean
+				|| object.getType() instanceof LEnum) {
 			relateds.add(object.getType());
 		}
 		return super.caseLEntityAttribute(object);

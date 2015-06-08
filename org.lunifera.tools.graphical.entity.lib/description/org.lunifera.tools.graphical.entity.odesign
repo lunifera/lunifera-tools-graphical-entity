@@ -24,7 +24,7 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="entitySuperType" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.2/@ownedTools[name='LEntityInheritanceDeletion']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:superType" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.4/@ownedTools[name='ReconnectSuperType']">
+        <edgeMappings name="entitySuperType" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.2/@ownedTools[name='LEntityInheritanceDeletion']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:superType" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectSuperType']">
           <style targetArrow="InputClosedArrow" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription showIcon="false">
@@ -32,7 +32,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="beanSuperType" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.3/@ownedTools[name='LBeanInheritanceDeletion']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetFinderExpression="feature:superType" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.4/@ownedTools[name='ReconnectSuperType']">
+        <edgeMappings name="beanSuperType" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.3/@ownedTools[name='LBeanInheritanceDeletion']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetFinderExpression="feature:superType" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectSuperType']">
           <style targetArrow="InputClosedArrow" sizeComputationExpression="2" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -40,7 +40,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="entityReference" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='LReference%20Name']" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='ShowPropertiesView']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getEntity()/]" domainClass="entity.LEntityReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.4/@ownedTools[name='ReconnectReference']">
+        <edgeMappings name="entityReference" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='LReference%20Name']" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='ShowPropertiesView']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getEntity()/]" domainClass="entity.LEntityReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
           <style sizeComputationExpression="" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription showIcon="false" labelExpression="[thisEObject.name/]">
@@ -51,7 +51,7 @@
             </endLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="beanReference" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20LAttribute%20Name']" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='ShowPropertiesView']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="entity.LBeanReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.4/@ownedTools[name='ReconnectReference']">
+        <edgeMappings name="beanReference" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20LAttribute%20Name']" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='ShowPropertiesView']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="entity.LBeanReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
           <style sizeComputationExpression="" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelExpression="[thisEObject.name/]">
@@ -62,7 +62,7 @@
             </endLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="beanToEntityReference" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20LAttribute%20Name']" semanticElements="var:self" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="entity.LBeanReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.4/@ownedTools[name='ReconnectReference']">
+        <edgeMappings name="beanToEntityReference" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20LAttribute%20Name']" semanticElements="var:self" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="entity.LBeanReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
           <style sizeComputationExpression="" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelExpression="[thisEObject.name/]">
@@ -119,6 +119,21 @@
             </style>
           </conditionnalStyles>
         </containerMappings>
+        <containerMappings name="LEnumContainer" createElements="false" domainClass="types.LEnum" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.4/@ownedTools[name='LEnumLiteralDrop']" childrenPresentation="List">
+          <labelDirectEdit href="../../org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@toolSections.5/@ownedTools[name='Edit%20Name%20with%20CamelCase']"/>
+          <subNodeMappings name="LEnumLiteral" semanticCandidatesExpression="feature:literals" domainClass="types.LEnumLiteral">
+            <labelDirectEdit href="../../org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@toolSections.5/@ownedTools[name='Edit%20Name%20no%20CamelCase']"/>
+            <style xsi:type="style:BundledImageDescription" labelAlignment="LEFT" tooltipExpression="service:renderTooltip" sizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderColor="//@userColorsPalettes[name=null]/@entries[name='Dark%20LEnum']" tooltipExpression="service:renderTooltip" backgroundStyle="Liquid" foregroundColor="//@userColorsPalettes[name=null]/@entries[name='LEnum']">
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
         <toolSections name="Existing Elements">
           <ownedTools xsi:type="tool:SelectionWizardDescription" name="Add" forceRefresh="true" candidatesExpression="service:getValidsForDiagram(containerView)" multiple="true" tree="true" rootExpression="service:allPackages" childrenExpression="feature:types" iconPath="/org.eclipse.search/icons/full/etool16/search.gif" windowTitle="Select element to add in diagram">
             <element name="element"/>
@@ -135,6 +150,9 @@
                   </subModelOperations>
                   <subModelOperations xsi:type="tool:If" conditionExpression="service:isPackage">
                     <subModelOperations xsi:type="tool_1:CreateView" mapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@additionalLayers[name='Package']/@containerMappings[name='DroppedTypedPackage']" containerViewExpression="var:containerView"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:If" conditionExpression="service:isEnum">
+                    <subModelOperations xsi:type="tool_1:CreateView" mapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEnumContainer']" containerViewExpression="var:containerView"/>
                   </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
@@ -166,6 +184,9 @@
                   <subModelOperations xsi:type="tool:If" conditionExpression="service:isPackage">
                     <subModelOperations xsi:type="tool_1:CreateView" mapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@additionalLayers[name='Package']/@containerMappings[name='DroppedTypedPackage']" containerViewExpression="var:newContainerView"/>
                   </subModelOperations>
+                  <subModelOperations xsi:type="tool:If" conditionExpression="service:isEnum">
+                    <subModelOperations xsi:type="tool_1:CreateView" mapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEnumContainer']" containerViewExpression="var:newContainerView"/>
+                  </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
@@ -194,6 +215,9 @@
                   </subModelOperations>
                   <subModelOperations xsi:type="tool:If" conditionExpression="service:isPackage">
                     <subModelOperations xsi:type="tool_1:CreateView" mapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@additionalLayers[name='Package']/@containerMappings[name='DroppedTypedPackage']" containerViewExpression="var:diagram"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:If" conditionExpression="service:isEnum">
+                    <subModelOperations xsi:type="tool_1:CreateView" mapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEnumContainer']" containerViewExpression="var:diagram"/>
                   </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
@@ -577,6 +601,41 @@
             </initialOperation>
           </ownedTools>
         </toolSections>
+        <toolSections name="Enum">
+          <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Enum" containerMappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEnumContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:CreateInstance" typeName="types.LEnum" referenceName="types">
+                <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="['NewEnum' + eContainer().eContents(types::LEnum)->size()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="Literal" nodeMappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEnumContainer']/@subNodeMappings[name='LEnumLiteral']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:CreateInstance" typeName="types.LEnumLiteral" referenceName="literals">
+                <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="['newLiteral' + eContainer().eContents(types::LEnumLiteral)->size()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ContainerDropDescription" name="LEnumLiteralDrop" mappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEnumContainer']/@subNodeMappings[name='LEnumLiteral']">
+            <oldContainer name="oldSemanticContainer"/>
+            <newContainer name="newSemanticContainer"/>
+            <element name="element"/>
+            <newViewContainer name="newContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:newSemanticContainer">
+                <subModelOperations xsi:type="tool:SetValue" featureName="literals" valueExpression="var:element">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:oldSemanticContainer">
+                    <subModelOperations xsi:type="tool:Unset" featureName="literals" elementExpression="var:element"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
         <toolSections name="Reconnect">
           <ownedTools xsi:type="tool_1:ReconnectEdgeDescription" name="ReconnectReference" reconnectionKind="RECONNECT_BOTH">
             <source name="source"/>
@@ -677,7 +736,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:ContainerDropDescription" name="Drop Type into LPackage" mappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" dragSource="BOTH">
+          <ownedTools xsi:type="tool_1:ContainerDropDescription" name="Drop Type into LPackage" mappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEnumContainer']" dragSource="BOTH">
             <oldContainer name="oldSemanticContainer"/>
             <newContainer name="newSemanticContainer"/>
             <element name="element"/>
