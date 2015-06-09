@@ -339,7 +339,7 @@ public class EntityService {
 		return any instanceof LPackage;
 	}
 
-	public Collection<EObject> children(final LTypedPackage pkg) {
+	public List<EObject> children(final LTypedPackage pkg) {
 		final String pkgName = pkg.getName();
 		Iterable<LTypedPackage> iterable = Iterables.filter(allPackages(pkg),
 				new Predicate<LTypedPackage>() {
@@ -349,8 +349,7 @@ public class EntityService {
 					}
 				});
 
-		return (Collection<EObject>) ((Collection<LTypedPackage>) Lists
-				.newLinkedList(iterable));
+		return Lists.<EObject> newLinkedList(iterable);
 	}
 
 	public Boolean viewContainerNotSemanticContainer(EObject self,
