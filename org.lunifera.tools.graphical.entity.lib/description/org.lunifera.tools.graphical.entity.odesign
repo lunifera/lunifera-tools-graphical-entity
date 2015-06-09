@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="org.lunifera.tools.graphical.entity" version="8.1.0">
   <ownedViewpoints name="Entities" modelFileExtension="entitymodel">
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.0/@ownedTools[name='External%20LType%20from%20treeview'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@additionalLayers[name='Package']/@toolSections.0/@ownedTools[name='Drop%20Type%20into%20LPackage']" name="Entity Packages" titleExpression="[name + ' entities diagram'/]" initialisation="true" pasteDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.0/@ownedTools[name='Paste%20Anything']" domainClass="types.LTypedPackage" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" dropDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.0/@ownedTools[name='anything%20from%20treeview'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@additionalLayers[name='Package']/@toolSections.0/@ownedTools[name='Drop%20Type%20into%20LPackage']" name="Entity Packages" titleExpression="[name + ' entities diagram'/]" initialisation="true" pasteDescriptions="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.0/@ownedTools[name='Paste%20Anything']" domainClass="types.LTypedPackage" enablePopupBars="true">
       <filters xsi:type="filter:CompositeFilterDescription" name="hideImports">
         <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@additionalLayers[name='Package']/@containerMappings[name='DroppedTypedPackage']" viewConditionExpression="[thisEObject.eResource().toString().contains('entitymodel')._not()/]"/>
       </filters>
@@ -40,7 +40,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="entityReference" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='LReference%20Name']" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='ShowPropertiesView']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getEntity()/]" domainClass="entity.LEntityReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
+        <edgeMappings name="entityReference" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.2/@ownedTools[name='LEntityReference']" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='LReference%20Name']" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='ShowPropertiesView']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getEntity()/]" domainClass="entity.LEntityReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
           <style sizeComputationExpression="" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription showIcon="false" labelExpression="[thisEObject.name/]">
@@ -51,10 +51,10 @@
             </endLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="beanReference" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20LAttribute%20Name']" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='ShowPropertiesView']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="entity.LBeanReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
+        <edgeMappings name="beanReference" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.3/@ownedTools[name='LBeanReference']" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20LAttribute%20Name']" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='ShowPropertiesView']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="entity.LBeanReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
           <style sizeComputationExpression="" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelExpression="[thisEObject.name/]">
+            <centerLabelStyleDescription showIcon="false" labelExpression="[thisEObject.name/]">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
             <endLabelStyleDescription labelSize="6" showIcon="false" labelExpression="service:eKeysLabel">
@@ -62,7 +62,7 @@
             </endLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="beanToEntityReference" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20LAttribute%20Name']" semanticElements="var:self" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="entity.LBeanReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
+        <edgeMappings name="beanToEntityReference" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.3/@ownedTools[name='LBeanReference']" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20LAttribute%20Name']" semanticElements="var:self" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="entity.LBeanReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
           <style sizeComputationExpression="" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelExpression="[thisEObject.name/]">
@@ -165,7 +165,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:ContainerDropDescription" name="External LType from treeview" forceRefresh="true" dragSource="PROJECT_EXPLORER">
+          <ownedTools xsi:type="tool_1:ContainerDropDescription" name="anything from treeview" forceRefresh="true" mappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEnumContainer'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer'] //@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@additionalLayers[name='Package']/@containerMappings[name='DroppedTypedPackage']" dragSource="PROJECT_EXPLORER">
             <oldContainer name="oldSemanticContainer"/>
             <newContainer name="newSemanticContainer"/>
             <element name="element"/>
@@ -319,7 +319,7 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
                 <subModelOperations xsi:type="tool:SetValue" featureName="superType" valueExpression="var:target"/>
-                <subModelOperations xsi:type="tool:ExternalJavaAction" name="LEntityInheritancePackageImport" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityInheritancePackageImport"/>
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(source)"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -343,7 +343,7 @@
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
-                <subModelOperations xsi:type="tool:ExternalJavaAction" name="LEntityAttributePackageImportToOne" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityReferencePackageImportToOne"/>
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(source)"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -367,7 +367,7 @@
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
-                <subModelOperations xsi:type="tool:ExternalJavaAction" name="LEntityAttributePackageImportToOne" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityReferencePackageImportToOne"/>
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(source)"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -376,7 +376,9 @@
             <elementView name="elementView"/>
             <containerView name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LEntityInheritanceDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityInheritanceDeletion"/>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LEntityInheritanceDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityInheritanceDeletion">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(element)"/>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool_1:DeleteElementDescription" name="LEntityAttributeDeletion">
@@ -384,7 +386,9 @@
             <elementView name="elementView"/>
             <containerView name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LEntityAttributeDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityAttributeDeletion"/>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LEntityAttributeDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityAttributeDeletion">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(element)"/>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool_1:DeleteElementDescription" name="LEntityDeletion">
@@ -392,7 +396,17 @@
             <elementView name="elementView"/>
             <containerView name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LEntityDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityDeletion"/>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LEntityDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityDeletion">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(element)"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DeleteElementDescription" name="LEntityReference">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:removeReference"/>
             </initialOperation>
           </ownedTools>
         </toolSections>
@@ -480,6 +494,7 @@
               <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
                 <subModelOperations xsi:type="tool:SetValue" featureName="superType" valueExpression="var:target"/>
                 <subModelOperations xsi:type="tool:ExternalJavaAction" name="LBeanInheritancePackageeImport" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanInheritancePackageImport"/>
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(source)"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -503,7 +518,7 @@
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
-                <subModelOperations xsi:type="tool:ExternalJavaAction" name="LBeanAttributePackageImportToOne" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanReferencePackageImportToOne"/>
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(source)"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -545,8 +560,8 @@
                 </subModelOperations>
                 <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:oppositeRef">
                   <subModelOperations xsi:type="tool:SetValue" featureName="opposite" valueExpression="var:beanReference"/>
-                  <subModelOperations xsi:type="tool:ExternalJavaAction" name="LBeanReferencePackageImportToMany" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanReferencePackageImportToMany"/>
                 </subModelOperations>
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(source)"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -570,7 +585,7 @@
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
-                <subModelOperations xsi:type="tool:ExternalJavaAction" name="LBeanAttributePackageImportToOne" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanReferencePackageImportToOne"/>
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(source)"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -579,7 +594,9 @@
             <elementView name="elementView"/>
             <containerView name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LBeanInheritanceDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanInheritanceDeletion"/>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LBeanInheritanceDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanInheritanceDeletion">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(element)"/>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool_1:DeleteElementDescription" name="LBeanAttributeDeletion">
@@ -587,7 +604,9 @@
             <elementView name="elementView"/>
             <containerView name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LBeanAttributeDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanAttributeDeletion"/>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LBeanAttributeDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanAttributeDeletion">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(element)"/>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool_1:DeleteElementDescription" name="LBeanDeletion">
@@ -595,7 +614,17 @@
             <elementView name="elementView"/>
             <containerView name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LBeanDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanDeletion"/>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="LBeanDeletion" id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanDeletion">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:fixImports(element)"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DeleteElementDescription" name="LBeanReference">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:removeReference"/>
             </initialOperation>
           </ownedTools>
         </toolSections>
@@ -740,9 +769,7 @@
             <element name="element"/>
             <newViewContainer name="newContainerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:newSemanticContainer">
-                <subModelOperations xsi:type="tool:SetValue" featureName="types" valueExpression="var:element"/>
-              </firstModelOperations>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:dropType(element, newSemanticContainer, oldSemanticContainer)"/>
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="New Package" label="new Package" containerMappings="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@additionalLayers[name='Package']/@containerMappings[name='DroppedTypedPackage']">

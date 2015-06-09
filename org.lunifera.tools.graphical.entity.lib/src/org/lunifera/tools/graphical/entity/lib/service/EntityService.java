@@ -3,6 +3,7 @@ package org.lunifera.tools.graphical.entity.lib.service;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -39,8 +40,10 @@ import org.eclipse.sirius.viewpoint.DSemanticDecorator;
 import org.eclipse.sirius.viewpoint.ViewpointPackage;
 import org.lunifera.dsl.semantic.common.helper.Bounds;
 import org.lunifera.dsl.semantic.common.types.LAttribute;
+import org.lunifera.dsl.semantic.common.types.LDataType;
 import org.lunifera.dsl.semantic.common.types.LEnum;
 import org.lunifera.dsl.semantic.common.types.LFeature;
+import org.lunifera.dsl.semantic.common.types.LImport;
 import org.lunifera.dsl.semantic.common.types.LMultiplicity;
 import org.lunifera.dsl.semantic.common.types.LOperation;
 import org.lunifera.dsl.semantic.common.types.LPackage;
@@ -57,6 +60,8 @@ import org.lunifera.dsl.semantic.entity.LEntityModel;
 import org.lunifera.dsl.semantic.entity.LEntityReference;
 import org.lunifera.dsl.semantic.entity.LunEntityFactory;
 import org.lunifera.dsl.semantic.entity.LunEntityPackage;
+import org.lunifera.dsl.semantic.entity.util.LunEntitySwitch;
+import org.lunifera.runtime.common.metric.TimeLogger;
 
 import com.google.common.base.Ascii;
 import com.google.common.base.CharMatcher;
@@ -794,4 +799,271 @@ public class EntityService {
 			}
 		}
 	}
+
+	public boolean dropType(EObject var, LType type,
+			LTypedPackage newSemanticContainer,
+			LTypedPackage oldSemanticContainer) {
+
+		Set<LTypedPackage> related = getRelatedPackages(type);
+		related.add(oldSemanticContainer);
+		related.add(newSemanticContainer);
+
+		// do the move
+		oldSemanticContainer.getTypes().remove(type);
+		newSemanticContainer.getTypes().add(type);
+
+		// fix imports
+		//
+		TimeLogger logger = TimeLogger.start(getClass());
+		for (LTypedPackage pkg : related) {
+			fixImports(pkg);
+		}
+		logger.stop("Fixing imports for dropped " + type.getName());
+
+		return true;
+	}
+
+	protected Set<LTypedPackage> getRelatedPackages(LType type) {
+		RelatedElementsSwitch rS = new RelatedElementsSwitch();
+		List<EObject> related = rS.getRelatedElements(type);
+
+		Set<LTypedPackage> result = new HashSet<LTypedPackage>();
+		for (EObject r : related) {
+			if (r instanceof LType) {
+				LTypedPackage pkg = (LTypedPackage) r.eContainer();
+				result.add(pkg);
+			} else if (r instanceof LReference) {
+				// r.type == given type && r is reference from somewhere to type
+				LType lType = (LType) r.eContainer();
+				LTypedPackage pkg = (LTypedPackage) lType.eContainer();
+				result.add(pkg);
+			}
+		}
+
+		return result;
+	}
+
+	public boolean removeReference(LEntityReference ref) {
+
+		LEntity source = ref.getEntity();
+		LEntity target = ref.getType();
+
+		source.getFeatures().remove(ref);
+		ref.setType(null);
+
+		fixImports(source, source);
+		fixImports(target, target);
+
+		return true;
+	}
+
+	public boolean removeReference(LBeanReference ref) {
+
+		LBean source = ref.getBean();
+		LType target = ref.getType();
+
+		source.getFeatures().remove(ref);
+		ref.setType(null);
+
+		fixImports(source, source);
+		fixImports(target, target);
+
+		return true;
+	}
+
+	public boolean fixImports(EObject var, LTypedPackage newSemanticContainer,
+			LTypedPackage oldSemanticContainer) {
+		fixImports(oldSemanticContainer);
+		fixImports(newSemanticContainer);
+
+		return true;
+	}
+
+	public boolean fixImports(EObject context, LType type) {
+		if (type instanceof LEntity) {
+			fixImports(context, (LEntity) type);
+		} else if (type instanceof LBean) {
+			fixImports(context, (LBean) type);
+		}
+
+		return true;
+	}
+
+	public boolean fixImports(EObject context, LBean subtype) {
+		LBean supertype = subtype.getSuperType();
+		fixImports((LTypedPackage) subtype.eContainer());
+		if (supertype != null && supertype.eContainer() != subtype.eContainer()) {
+			fixImports((LTypedPackage) supertype.eContainer());
+		}
+
+		return true;
+	}
+
+	public boolean fixImports(EObject context, LEntity subtype) {
+		LEntity supertype = subtype.getSuperType();
+		fixImports((LTypedPackage) subtype.eContainer());
+		if (supertype != null && supertype.eContainer() != subtype.eContainer()) {
+			fixImports((LTypedPackage) supertype.eContainer());
+		}
+
+		return true;
+	}
+
+	public boolean fixImports(LTypedPackage lPkg) {
+
+		// remove old imports
+		lPkg.getImports().clear();
+
+		ImportCollectionSwitch s = new ImportCollectionSwitch();
+		s.doSwitch(lPkg);
+
+		appendImports(lPkg, s.imports);
+
+		return true;
+	}
+
+	private void appendImports(LTypedPackage lPkg, Set<String> imports) {
+		for (String imp : imports) {
+			if (!lPkg.getName().equals(imp)) {
+				LImport lImp = LunTypesFactory.eINSTANCE.createLImport();
+				lImp.setImportedNamespace(imp + ".*");
+				lPkg.getImports().add(lImp);
+			}
+		}
+	}
+
+	private class ImportCollectionSwitch extends LunEntitySwitch<Boolean> {
+
+		private Set<String> imports = new HashSet<String>();
+		private boolean isInType;
+
+		@Override
+		public Boolean caseLBean(LBean object) {
+
+			addImport(object);
+
+			if (isInType) {
+				return true;
+			}
+
+			isInType = true;
+
+			if (object.getSuperType() != null) {
+				doSwitch(object.getSuperType());
+			}
+
+			for (LBeanAttribute att : object.getAttributes()) {
+				doSwitch(att);
+			}
+
+			for (LBeanReference ref : object.getReferences()) {
+				doSwitch(ref);
+			}
+
+			isInType = false;
+
+			return super.caseLBean(object);
+		}
+
+		@Override
+		public Boolean caseLEntity(LEntity object) {
+
+			addImport(object);
+
+			if (isInType) {
+				return true;
+			}
+
+			isInType = true;
+
+			if (object.getSuperType() != null) {
+				doSwitch(object.getSuperType());
+			}
+
+			for (LEntityAttribute att : object.getAttributes()) {
+				doSwitch(att);
+			}
+
+			for (LEntityReference ref : object.getReferences()) {
+				doSwitch(ref);
+			}
+
+			isInType = false;
+
+			return super.caseLEntity(object);
+		}
+
+		@Override
+		public Boolean caseLEntityAttribute(LEntityAttribute object) {
+			if (object.getType() instanceof LBean) {
+				doSwitch(object.getType());
+			} else if (object.getType() instanceof LDataType) {
+				doSwitch(object.getType());
+			} else if (object.getType() instanceof LEnum) {
+				doSwitch(object.getType());
+			}
+
+			return super.caseLEntityAttribute(object);
+		}
+
+		@Override
+		public Boolean caseLEntityReference(LEntityReference object) {
+
+			if (object.getType() != null) {
+				doSwitch(object.getType());
+			}
+
+			return super.caseLEntityReference(object);
+		}
+
+		@Override
+		public Boolean caseLBeanAttribute(LBeanAttribute object) {
+			if (object.getType() instanceof LBean) {
+				doSwitch(object.getType());
+			} else if (object.getType() instanceof LDataType) {
+				doSwitch(object.getType());
+			} else if (object.getType() instanceof LEnum) {
+				doSwitch(object.getType());
+			}
+
+			return super.caseLBeanAttribute(object);
+		}
+
+		@Override
+		public Boolean caseLBeanReference(LBeanReference object) {
+			if (object.getType() != null) {
+				doSwitch(object.getType());
+			}
+			return super.caseLBeanReference(object);
+		}
+
+		@Override
+		public Boolean defaultCase(EObject object) {
+			if (object instanceof LTypedPackage) {
+				for (LType type : ((LTypedPackage) object).getTypes()) {
+					doSwitch(type);
+				}
+			} else if (object instanceof LDataType) {
+				addImport((LType) object);
+			} else if (object instanceof LEnum) {
+				addImport((LType) object);
+			}
+			return super.defaultCase(object);
+		}
+
+		private void addImport(LType type) {
+			imports.add(calcImport(type));
+		}
+
+		private String calcImport(LType type) {
+			if (type == null) {
+				return "";
+			}
+
+			LTypedPackage pkg = (LTypedPackage) type.eContainer();
+			return pkg.getName();
+		}
+
+	}
+
 }

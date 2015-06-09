@@ -18,6 +18,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius.diagram,
  org.eclipse.gmf.runtime.notation.edit,
  org.eclipse.sirius.ext.base,
- org.eclipse.sirius.ecore.extender
+ org.eclipse.sirius.ecore.extender,
+ org.lunifera.runtime.common
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

@@ -63,6 +63,10 @@
            actionClass="org.lunifera.tools.graphical.entity.lib.LBeanDeletion"
            id="org.lunifera.tools.graphical.entity.lib.javaActionsLBeanDeletion">
      </javaActions>
+      <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.LEntityDroppedToDifferentPackage"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityDroppedToDifferentPackage">
+     </javaActions>
   </extension>
   <extension
         point="org.eclipse.sirius.sessionManagerListener">

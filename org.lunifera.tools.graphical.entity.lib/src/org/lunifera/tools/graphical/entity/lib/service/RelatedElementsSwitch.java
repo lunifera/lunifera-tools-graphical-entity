@@ -11,6 +11,7 @@
 package org.lunifera.tools.graphical.entity.lib.service;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
@@ -61,6 +62,12 @@ public class RelatedElementsSwitch extends LunEntitySwitch<List<EObject>> {
 			xRefs = referencer.getInverseReferences(ctx);
 		}
 		doSwitch(ctx);
+		
+		
+		for(Setting s : xRefs) {
+			relateds.add(s.getEObject());
+		}
+		
 		relateds.remove(ctx);
 		// hack to prevent some null element in relateds for a unknown reason.
 		relateds.remove(null);
@@ -69,6 +76,9 @@ public class RelatedElementsSwitch extends LunEntitySwitch<List<EObject>> {
 
 	@Override
 	public List<EObject> caseLEntity(LEntity object) {
+		if(object == null) {
+			return Collections.emptyList();
+		}
 		relateds.add(object.getSuperType());
 
 		for (LEntityReference ref : object.getReferences()) {
@@ -88,6 +98,12 @@ public class RelatedElementsSwitch extends LunEntitySwitch<List<EObject>> {
 
 	@Override
 	public List<EObject> caseLBean(LBean object) {
+		if(object == null) {
+			return Collections.emptyList();
+		}
+		
+		relateds.add(object.getSuperType());
+		
 		for (LBeanReference ref : object.getReferences()) {
 			if (ref.getType() != null) {
 				caseLBeanReference(ref);
