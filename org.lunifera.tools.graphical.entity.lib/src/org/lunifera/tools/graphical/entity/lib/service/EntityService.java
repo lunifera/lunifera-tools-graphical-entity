@@ -349,7 +349,7 @@ public class EntityService {
 					}
 				});
 
-		return Lists.newLinkedList(iterable);
+		return (Collection<EObject>) Lists.newLinkedList(iterable);
 	}
 
 	public Boolean viewContainerNotSemanticContainer(EObject self,
