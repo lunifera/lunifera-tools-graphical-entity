@@ -349,7 +349,8 @@ public class EntityService {
 					}
 				});
 
-		return (Collection<EObject>) Lists.newLinkedList(iterable);
+		return (Collection<EObject>) ((Collection<LTypedPackage>) Lists
+				.newLinkedList(iterable));
 	}
 
 	public Boolean viewContainerNotSemanticContainer(EObject self,
