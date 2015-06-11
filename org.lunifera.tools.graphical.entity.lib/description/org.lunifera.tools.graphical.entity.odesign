@@ -41,7 +41,7 @@
           </style>
         </edgeMappings>
         <edgeMappings name="entityReference" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.2/@ownedTools[name='LEntityReference']" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='LReference%20Name']" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='ShowPropertiesView']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getEntity()/]" domainClass="entity.LEntityReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
-          <style sizeComputationExpression="" routingStyle="manhattan">
+          <style sizeComputationExpression="1" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription showIcon="false" labelExpression="[thisEObject.name/]">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -52,7 +52,7 @@
           </style>
         </edgeMappings>
         <edgeMappings name="beanReference" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.3/@ownedTools[name='LBeanReference']" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20LAttribute%20Name']" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='ShowPropertiesView']" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="entity.LBeanReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
-          <style sizeComputationExpression="" routingStyle="manhattan">
+          <style sizeComputationExpression="1" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription showIcon="false" labelExpression="[thisEObject.name/]">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -63,7 +63,7 @@
           </style>
         </edgeMappings>
         <edgeMappings name="beanToEntityReference" deletionDescription="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.3/@ownedTools[name='LBeanReference']" labelDirectEdit="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.1/@ownedTools[name='Edit%20LAttribute%20Name']" semanticElements="var:self" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LBeanContainer']" targetMapping="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@containerMappings[name='LEntityContainer']" targetFinderExpression="feature:type" sourceFinderExpression="[thisEObject.getBean()/]" domainClass="entity.LBeanReference" useDomainElement="true" reconnections="//@ownedViewpoints[name='Entities']/@ownedRepresentations[name='Entity%20Packages']/@defaultLayer/@toolSections.5/@ownedTools[name='ReconnectReference']">
-          <style sizeComputationExpression="" routingStyle="manhattan">
+          <style sizeComputationExpression="1" routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelExpression="[thisEObject.name/]">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
