@@ -23,7 +23,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ui.workbench.texteditor,
  org.eclipse.xtext,
  org.eclipse.ui.ide,
- org.obeonetwork.dsl.viewpoint.xtext.support,
  org.lunifera.dsl.entity.xtext.ui
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
