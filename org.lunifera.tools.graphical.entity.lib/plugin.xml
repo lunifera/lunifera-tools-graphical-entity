@@ -67,6 +67,10 @@
            actionClass="org.lunifera.tools.graphical.entity.lib.LEntityDroppedToDifferentPackage"
            id="org.lunifera.tools.graphical.entity.lib.javaActionsLEntityDroppedToDifferentPackage">
      </javaActions>
+           <javaActions
+           actionClass="org.lunifera.tools.graphical.entity.lib.OpenEmbeddedEditor"
+           id="org.lunifera.tools.graphical.entity.lib.javaActionsOpenEmbeddedEditor">
+     </javaActions>
   </extension>
   <extension
         point="org.eclipse.sirius.sessionManagerListener">

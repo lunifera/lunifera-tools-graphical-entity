@@ -19,6 +19,11 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.gmf.runtime.notation.edit,
  org.eclipse.sirius.ext.base,
  org.eclipse.sirius.ecore.extender,
- org.lunifera.runtime.common
+ org.lunifera.runtime.common,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.xtext,
+ org.eclipse.ui.ide,
+ org.obeonetwork.dsl.viewpoint.xtext.support,
+ org.lunifera.dsl.entity.xtext.ui
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
