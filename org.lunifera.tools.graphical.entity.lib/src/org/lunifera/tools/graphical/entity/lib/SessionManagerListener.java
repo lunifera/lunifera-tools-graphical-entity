@@ -11,8 +11,10 @@
 
 package org.lunifera.tools.graphical.entity.lib;
 
+import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.sirius.business.api.session.Session;
+import org.eclipse.sirius.tools.api.command.semantic.AddSemanticResourceCommand;
 import org.eclipse.sirius.viewpoint.description.Viewpoint;
 
 public class SessionManagerListener implements
@@ -27,7 +29,7 @@ public class SessionManagerListener implements
 		URI from = URI.createURI(DATATYPE_RESOURCE);
 		URI to = URI.createURI(DATATYPE_PLUGIN);
 		
-		newSession.getTransactionalEditingDomain().addResourceSetListener(new TransactionListener());
+//		newSession.getTransactionalEditingDomain().addResourceSetListener(new TransactionListener());
 		
 //		MapUriCommand muCommand = new MapUriCommand(newSession,from, to, null, null );
 //		newSession.getTransactionalEditingDomain().getCommandStack()

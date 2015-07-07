@@ -24,6 +24,7 @@ import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.jdt.core.IClasspathEntry;
 import org.eclipse.jdt.core.IJavaProject;
@@ -60,6 +61,10 @@ public class XtextResourceSetFactory extends org.eclipse.sirius.common.tools.api
          * get broken when saving, see Bug 448304.
          */
         set.getLoadOptions().put(org.eclipse.xtext.resource.impl.ResourceDescriptionsProvider.LIVE_SCOPE, Boolean.TRUE);
+
+        // preload datatypes
+        Resource resourceDt = set.getResource(URI.createURI("platform:/resource/org.lunifera.dsl.datatype.lib/org/lunifera/dsl/common/datatypes/baseElements.datatypes"), true);
+
         return set;
     }
 
